@@ -1,7 +1,7 @@
 
 
 # convenience aliases
-alias ls='ls -Ga'
+alias ls='ls -Ga --color'
 alias ll='ls -l'
 alias la='ls -la'
 
