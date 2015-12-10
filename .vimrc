@@ -76,7 +76,7 @@ command Xmlbreak %s/></>\r</g
 " simple command to set the current path to the current filename
 command SetCD cd %:p:h
 
-set nowrap
+" improve tabs/spaces
 set ts=3
 set sw=3
 set expandtab
