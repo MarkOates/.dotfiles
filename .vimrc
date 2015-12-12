@@ -111,7 +111,7 @@ match OverLength /\%121v.\+/
 hi User1 ctermbg=4 ctermfg=7
 hi User2 ctermbg=1 ctermfg=7
 set laststatus=2
-set statusline=%1*\ %f\ %*
+set statusline=%1*\ %t\ %*
 set statusline+=%2*%m%*
 set statusline+=\ [%{getcwd()}]
 set statusline+=%{fugitive#statusline()}
