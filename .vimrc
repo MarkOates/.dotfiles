@@ -113,7 +113,7 @@ hi User2 ctermbg=1 ctermfg=7
 set laststatus=2
 set statusline=%1*\ %f\ %*
 set statusline+=%2*%m%*
-set statusline+=\ [%{getcwd()}/%F]
+set statusline+=\ [%{getcwd()}]
 set statusline+=%{fugitive#statusline()}
 set statusline+=%=%-14.(%l,%c%V%)\ %p%%
 
