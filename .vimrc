@@ -101,15 +101,19 @@ set directory=$HOME/.vimswap.,~/tmp,/var/tmp,/tmp
 set cursorline
 set ruler
 set rulerformat=%30(%=\:b%n%y%m%r%w\ %l,%c%V\ %P%)
-set scrolljump=5
+set scrolljump=1
 set scrolloff=5
 set colorcolumn=80
 highlight OverLength ctermbg=red ctermfg=white guibg=#592929
 match OverLength /\%121v.\+/
 
 " statusline
+hi User1 ctermbg=4 ctermfg=7
+hi User2 ctermbg=1 ctermfg=7
 set laststatus=2
-set statusline=[%{getcwd()}/%F]
+set statusline=%1*\ %f\ %*
+set statusline+=%2*%m%*
+set statusline+=\ [%{getcwd()}/%F]
 set statusline+=%{fugitive#statusline()}
 set statusline+=%=%-14.(%l,%c%V%)\ %p%%
 
