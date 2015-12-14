@@ -1,9 +1,13 @@
 
 
-# convenience aliases
+# convenience aliases for shell
 alias ls='ls -Ga'
 alias ll='ls -l'
 alias la='ls -la'
+
+
+# convience aliases for ruby/rails
+alias be='bundle exec'
 
 
 # allows you to use the varant repo from anywhere
