@@ -93,6 +93,7 @@ set list
 set hlsearch
 set ignorecase
 set smartcase
+hi Search cterm=NONE ctermfg=NONE ctermbg=darkblue
 
 set backupdir=$HOME/.vimbackup
 set directory=$HOME/.vimswap.,~/tmp,/var/tmp,/tmp
