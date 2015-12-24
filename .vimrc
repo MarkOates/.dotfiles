@@ -19,6 +19,9 @@ Plugin 'mattn/webapi-vim'
 Plugin 'mattn/gist-vim'
 Plugin 'rizzatti/dash.vim'
 
+" file browser
+Plugin 'ctrlpvim/ctrlp.vim'
+
 " syntax
 Plugin 'tpope/vim-ragtag'
 Plugin 'tpope/vim-markdown'
