@@ -107,9 +107,9 @@ set ruler
 set rulerformat=%30(%=\:b%n%y%m%r%w\ %l,%c%V\ %P%)
 set scrolljump=1
 set scrolloff=5
-set colorcolumn=80
-highlight OverLength ctermbg=red ctermfg=white guibg=#592929
-match OverLength /\%121v.\+/
+" set colorcolumn=80
+" highlight OverLength ctermbg=red ctermfg=white guibg=#592929
+" match OverLength /\%121v.\+/
 
 " statusline
 hi User1 ctermbg=4 ctermfg=7
