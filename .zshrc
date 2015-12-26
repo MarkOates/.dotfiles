@@ -6,6 +6,11 @@ alias ll='ls -l'
 alias la='ls -la'
 
 
+# have readable folder/file colors in the shell
+export CLICOLOR=1
+export LSCOLORS=GxFxCxDxBxegedabagaced
+
+
 # convience aliases for ruby/rails
 alias be='bundle exec'
 
