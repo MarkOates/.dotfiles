@@ -11,6 +11,12 @@ export CLICOLOR=1
 export LSCOLORS=GxFxCxDxBxegedabagaced
 
 
+# convience aliases for git
+alias gs='git status'
+alias gd='git diff'
+alias gds='git diff --staged'
+
+
 # convience aliases for ruby/rails
 alias be='bundle exec'
 
