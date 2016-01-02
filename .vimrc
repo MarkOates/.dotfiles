@@ -10,30 +10,33 @@ Plugin 'chriskempson/base16-vim'
 
 " tool integrations
 Plugin 'tpope/vim-fugitive'
-Plugin 'tpope/vim-git'
-Plugin 'tpope/vim-surround'
-Plugin 'tpope/vim-unimpaired'
-Plugin 'tpope/vim-sleuth'
+"Plugin 'tpope/vim-git'
+"Plugin 'tpope/vim-surround'
+"Plugin 'tpope/vim-unimpaired'
+" Plugin 'tpope/vim-sleuth'
 Plugin 'airblade/vim-gitgutter'
-Plugin 'mattn/webapi-vim'
-Plugin 'mattn/gist-vim'
-Plugin 'rizzatti/dash.vim'
+"Plugin 'mattn/webapi-vim'
+"Plugin 'mattn/gist-vim'
+"Plugin 'rizzatti/dash.vim'
 
 " file browser
 Plugin 'ctrlpvim/ctrlp.vim'
 
+" file formats
+Plugin 'tikhomirov/vim-glsl'
+
 " syntax
-Plugin 'tpope/vim-ragtag'
-Plugin 'tpope/vim-markdown'
-Plugin 'tpope/vim-bundler'
-Plugin 'tpope/vim-rake'
-Plugin 'tpope/vim-rails'
-Plugin 'kchmck/vim-coffee-script'
-Plugin 'scrooloose/syntastic'
-Plugin 'othree/yajs.vim'
-Plugin 'mxw/vim-jsx'
-Plugin 'elixir-lang/vim-elixir'
-Plugin 'kien/rainbow_parentheses.vim'
+"Plugin 'tpope/vim-ragtag'
+"Plugin 'tpope/vim-markdown'
+"Plugin 'tpope/vim-bundler'
+"Plugin 'tpope/vim-rake'
+"Plugin 'tpope/vim-rails'
+"Plugin 'kchmck/vim-coffee-script'
+"Plugin 'scrooloose/syntastic'
+"Plugin 'othree/yajs.vim'
+"Plugin 'mxw/vim-jsx'
+"Plugin 'elixir-lang/vim-elixir'
+"Plugin 'kien/rainbow_parentheses.vim'
 
 Plugin 'scrooloose/nerdtree'
 
@@ -54,7 +57,7 @@ syntax enable
 set showcmd
 set showmode
 set nu " line numbers on
-set showmatch
+" set showmatch
 " set spell
 set history=1000
 set backup " backup current file
@@ -62,7 +65,7 @@ set splitright
 set splitbelow
 set mouse=a
 set clipboard=unnamed
-let mapleader='.'
+"let mapleader='.'
 
 
 " make it look FAB!
@@ -82,14 +85,14 @@ command SetCD cd %:p:h
 " improve tabs/spaces
 set ts=3
 set sw=3
-set expandtab
+"set expandtab
 set softtabstop=2
 set autoindent
 "set backspace=indent,eol,start
 set backspace=2 " make backspace behave as expected
 set linespace=0
-set listchars=tab:,.,trail:.,extends:#,nbsp:.
-set list
+" set listchars=tab:,.,trail:.,extends:#,nbsp:.
+"set list
 
 " searching
 "set incsearch
@@ -102,7 +105,7 @@ set backupdir=$HOME/.vimbackup
 set directory=$HOME/.vimswap.,~/tmp,/var/tmp,/tmp
 
 " visual editing
-set cursorline
+"set cursorline
 set ruler
 set rulerformat=%30(%=\:b%n%y%m%r%w\ %l,%c%V\ %P%)
 set scrolljump=1
@@ -130,10 +133,10 @@ set wildmode=list:longest,full
 
 
 " Rainbow parens
-au VimEnter * RainbowParenthesesToggle
-au Syntax * RainbowParenthesesLoadRound
-au Syntax * RainbowParenthesesLoadSquare
-au Syntax * RainbowParenthesesLoadBraces
+" au VimEnter * RainbowParenthesesToggle
+" au Syntax * RainbowParenthesesLoadRound
+" au Syntax * RainbowParenthesesLoadSquare
+" au Syntax * RainbowParenthesesLoadBraces
 
 " wrap markdown
 au BufRead,BufNewFile *.md setlocal textwidth=80
