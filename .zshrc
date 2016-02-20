@@ -50,7 +50,6 @@ fi
 ### Format the prompt
 ###
 
-
 ### Shows state of the Versioning Control System (e.g. Git, Subversion, Mercurial
 autoload -Uz vcs_info
 
@@ -60,10 +59,12 @@ zstyle ':vcs_info:*' check-for-changes true
 zstyle ':vcs_info:(sv[nk]|bzr):*' branchformat '%b%F{red}:%f%F{yellow}%r%f'
 zstyle ':vcs_info:*' enable git svn
 precmd () {
+    GIT_USER_EMAIL=`git config user.email`
+
     if [[ -z $(git ls-files --other --exclude-standard 2> /dev/null) ]] {
-        zstyle ':vcs_info:*' formats '%F{cyan}[%b%c%u%f%F{cyan}]%f'
+        zstyle ':vcs_info:*' formats '%F{cyan}[%b%c%u%f%F{cyan}]%f as %F{cyan}'$GIT_USER_EMAIL'%f'
     } else {
-        zstyle ':vcs_info:*' formats '%F{cyan}[%b%c%u%f%F{red}●%f%F{cyan}]%f'
+        zstyle ':vcs_info:*' formats '%F{cyan}[%b%c%u%f%F{red}●%f%F{cyan}]%f as %F{cyan}'$GIT_USER_EMAIL'%f'
     }
 
     vcs_info
