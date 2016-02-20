@@ -11,6 +11,13 @@ export CLICOLOR=1
 export LSCOLORS=GxFxCxDxBxegedabagaced
 
 
+
+# path stuff
+export PATH=$PATH:/Users/markoates/Repos/CastXMLSuperbuild-build/castxml/bin
+export PATH="$PATH:$HOME/.rvm/bin" # Add RVM to PATH for scripting
+
+
+
 # convience aliases for git
 alias gs='git status'
 alias gd='git diff'
