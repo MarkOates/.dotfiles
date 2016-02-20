@@ -15,6 +15,11 @@ export LSCOLORS=GxFxCxDxBxegedabagaced
 alias gs='git status'
 alias gd='git diff'
 alias gds='git diff --staged'
+alias gl='git log'
+alias gp='git pull'
+alias gb='git branch'
+alias ga='git add'
+alias gc='git checkout'
 
 
 # convience aliases for ruby/rails
