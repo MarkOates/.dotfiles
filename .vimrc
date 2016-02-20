@@ -83,10 +83,20 @@ command Xmlbreak %s/></>\r</g
 command SetCD cd %:p:h
 
 " improve tabs/spaces
-set ts=3
-set sw=3
-"set expandtab
-set softtabstop=2
+echo $VIM_NUM_SPACES
+let env_how_many_spaces=$VIM_NUM_SPACES
+if $VIM_NUM_SPACES == ""
+  echo " = = = VIM_NUM_SPACES env var NOT SET, defaulting to 2"
+  let env_how_many_spaces=2
+else
+  echo "VIM_NUM_SPACES env var SET to" . $VIM_NUM_SPACES
+  let env_how_many_spaces=$VIM_NUM_SPACES
+endif
+let &ts=env_how_many_spaces
+let &sw=env_how_many_spaces
+let &tabstop=env_how_many_spaces
+set expandtab
+let &softtabstop=env_how_many_spaces
 set autoindent
 "set backspace=indent,eol,start
 set backspace=2 " make backspace behave as expected
