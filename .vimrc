@@ -39,7 +39,7 @@ Plugin 'tikhomirov/vim-glsl'
 "Plugin 'kien/rainbow_parentheses.vim'
 
 Plugin 'scrooloose/nerdtree'
-
+Plugin 'Yggdroot/indentLine' " hilights indents
 
 call vundle#end()
 
