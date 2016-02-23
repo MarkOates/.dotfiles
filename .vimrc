@@ -165,6 +165,10 @@ au BufNewFile,BufRead *.es6 set filetype=javascript
 "map <S-Enter> O<ESC>
 
 
+" disable auto-formatting of comments
+autocmd BufNewFile,BufRead * setlocal formatoptions-=r " prevents auto-adding comments on ENTER
+autocmd BufNewFile,BufRead * setlocal formatoptions-=o " prevents auto-adding comments when adding new lines with o or O
+
 " Have the vim cursor change when in edit mode/insert mode
 " NOTE: this is only effective for iTerm2 on OSX
 " e.g.: http://vim.wikia.com/wiki/Change_cursor_shape_in_different_modes
