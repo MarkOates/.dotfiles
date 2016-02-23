@@ -39,12 +39,15 @@ Plugin 'tikhomirov/vim-glsl'
 "Plugin 'kien/rainbow_parentheses.vim'
 
 Plugin 'scrooloose/nerdtree'
+Plugin 'scrooloose/nerdcommenter'
 Plugin 'Yggdroot/indentLine' " hilights indents
 
 call vundle#end()
 
 syntax on
 filetype plugin indent on
+let mapleader="," " for nerdcommenter
+filetype plugin on " for nerdcommenter
 
 
 " start NERDTree upon entering VIM
