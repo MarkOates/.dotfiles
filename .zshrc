@@ -6,6 +6,13 @@ alias ll='ls -l'
 alias la='ls -la'
 
 
+# mdircd to make a new dir and enter into it
+mkcd () {
+  mkdir "$1"
+  cd "$1"
+}
+
+
 # have readable folder/file colors in the shell
 export CLICOLOR=1
 export LSCOLORS=GxFxCxDxBxegedabagaced
