@@ -36,6 +36,7 @@ alias gp='git pull'
 alias gb='git branch'
 alias ga='git add'
 alias gc='git checkout'
+alias gg='git grep'
 
 
 # convience aliases for ruby/rails
