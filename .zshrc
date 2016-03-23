@@ -42,6 +42,7 @@ alias gg='git grep'
 # convience aliases for ruby/rails
 alias be='bundle exec'
 alias bi='bundle install'
+alias rit='bundle exec ruby -Itest'
 
 
 # allows you to use the varant repo from anywhere
