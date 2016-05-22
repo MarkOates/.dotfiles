@@ -21,7 +21,6 @@ export LSCOLORS=GxFxCxDxBxegedabagaced
 
 # path stuff
 export PATH=$PATH:/Users/markoates/Repos/CastXMLSuperbuild-build/castxml/bin
-export PATH="$PATH:$HOME/.rvm/bin" # Add RVM to PATH for scripting
 
 
 
@@ -109,3 +108,5 @@ PROMPT3='{ … }  '
 ### So far I don't use "setopt xtrace", so I don't need this prompt
 #PROMPT4=''
 
+
+[ -f /opt/dev/dev.sh ] && source /opt/dev/dev.sh
