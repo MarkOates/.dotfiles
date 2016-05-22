@@ -90,10 +90,10 @@ command SetCD cd %:p:h
 echo $VIM_NUM_SPACES
 let env_how_many_spaces=$VIM_NUM_SPACES
 if $VIM_NUM_SPACES == ""
-  echo " = = = VIM_NUM_SPACES env var NOT SET, defaulting to 2"
+  " echo " = = = VIM_NUM_SPACES env var NOT SET, defaulting to 2"
   let env_how_many_spaces=2
 else
-  echo "VIM_NUM_SPACES env var SET to" . $VIM_NUM_SPACES
+  echo "VIM_NUM_SPACES env var SET to " . $VIM_NUM_SPACES
   let env_how_many_spaces=$VIM_NUM_SPACES
 endif
 let &ts=env_how_many_spaces
@@ -178,3 +178,8 @@ autocmd BufNewFile,BufRead * setlocal formatoptions-=o " prevents auto-adding co
 let &t_SI = "\<Esc>]50;CursorShape=1\x7"
 let &t_SR = "\<Esc>]50;CursorShape=2\x7"
 let &t_EI = "\<Esc>]50;CursorShape=0\x7"
+
+
+" always expand the number of spaces to 3 for c/cpp
+autocmd Filetype c setlocal expandtab tabstop=3 shiftwidth=3 softtabstop=3
+autocmd Filetype cpp setlocal expandtab tabstop=3 shiftwidth=3 softtabstop=3
