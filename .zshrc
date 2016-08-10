@@ -74,9 +74,11 @@ precmd () {
     GIT_USER_EMAIL=`git config user.email`
 
     if [[ -z $(git ls-files --other --exclude-standard 2> /dev/null) ]] {
-        zstyle ':vcs_info:*' formats '%F{cyan}[%b%c%u%f%F{cyan}]%f as %F{cyan}'$GIT_USER_EMAIL'%f'
+        zstyle ':vcs_info:*' formats '%F{cyan}%K{blue} %r %F{white}[%b%c%u%f%F{white}] %K{blue}%F{black}as '$GIT_USER_EMAIL'%f 
+'
     } else {
-        zstyle ':vcs_info:*' formats '%F{cyan}[%b%c%u%f%F{red}●%f%F{cyan}]%f as %F{cyan}'$GIT_USER_EMAIL'%f'
+        zstyle ':vcs_info:*' formats '%F{cyan}%K{blue} %r %F{white}[%b%c%u%f%F{red}●%f%F{white}] %K{blue}%F{black}as '$GIT_USER_EMAIL'%f  
+'
     }
 
     vcs_info
@@ -95,9 +97,10 @@ setopt prompt_subst # Enables additional prompt extentions
 autoload -U colors && colors    # Enables colours
 
 ### My default prompt
-PROMPT='╔══ %(!.%B%U$fg_bold[cyan]%n%f%u%b.%F{cyan}%n%f)@%F{magenta}%m%f ════ %F{cyan}%y%f ════ ${vcs_info_msg_0_}
-╚══{ %F{yellow}%~%f }: %{$reset_color%}'
+PROMPT='${vcs_info_msg_0_}%K{166} %(!.%B%U$fg_bold[cyan]%n%f%u%b.%F{yellow}%n%f) %K{yellow}%F{black} %~ %F{yellow}%K{black}'$'\u25b6''%K{black}%F{white}%f%{$reset_color%} '
+
 ### My default prompt's right side
+# RPROMPT=" %k%f""%F{166}%K{129}"$'\U02620'%f
 RPROMPT='%F{cyan}%D{%e.%b.%y %H.%M}%f%{$reset_color%}'
 
 ### My prompt for loops
