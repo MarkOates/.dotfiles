@@ -39,6 +39,14 @@ alias gg='git grep'
 alias gdt='git diff-tree --no-commit-id --name-only -r'
 
 
+
+# conviences for werk
+alias d='dev'
+alias dcd='dev cd'
+alias dt='dev test'
+
+
+
 # convience aliases for ruby/rails
 alias be='bundle exec'
 alias bi='bundle install'
