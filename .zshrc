@@ -37,6 +37,7 @@ alias ga='git add'
 alias gc='git checkout'
 alias gg='git grep'
 alias gdt='git diff-tree --no-commit-id --name-only -r'
+alias gcm='git commit -m'
 
 
 
