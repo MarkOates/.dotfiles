@@ -184,3 +184,9 @@ let &t_EI = "\<Esc>]50;CursorShape=0\x7"
 " always expand the number of spaces to 3 for c/cpp
 autocmd Filetype c setlocal expandtab tabstop=3 shiftwidth=3 softtabstop=3
 autocmd Filetype cpp setlocal expandtab tabstop=3 shiftwidth=3 softtabstop=3
+
+
+
+" remap the ; key to be ;
+nnoremap ; :
+vnoremap ; :
