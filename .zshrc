@@ -38,6 +38,7 @@ alias ga='git add'
 alias gg='git grep'
 alias gdt='git diff-tree --no-commit-id --name-only -r'
 alias gcm='git commit -m'
+alias gca='git commit --amend'
 
 
 
