@@ -47,6 +47,10 @@ alias gca='git commit --amend'
 alias d='dev'
 alias dcd='dev cd'
 alias dt='dev test'
+alias dc='dev console'
+alias ds='dev server'
+alias rc='rails console'
+alias rs='rails server'
 
 
 
