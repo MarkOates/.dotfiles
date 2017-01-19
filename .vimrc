@@ -39,6 +39,7 @@ Plugin 'tikhomirov/vim-glsl'
 "Plugin 'elixir-lang/vim-elixir'
 "Plugin 'kien/rainbow_parentheses.vim'
 
+Plugin 'EvanDotPro/nerdtree-chmod' " adds a chmod option in NERDTree 'm' menu
 Plugin 'scrooloose/nerdtree'
 Plugin 'scrooloose/nerdcommenter'
 Plugin 'Yggdroot/indentLine' " hilights indents
