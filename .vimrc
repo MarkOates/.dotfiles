@@ -139,7 +139,8 @@ set statusline=%1*\ %t\ %*
 set statusline+=%2*%m%*
 " set statusline+=\ [%f]
 " set statusline+=\ [%{getcwd()}]
-set statusline+=%3*\ %{fugitive#statusline()}\ %*
+set statusline+=%3*\ %*
+" set statusline+=%3*\ %{fugitive#statusline()}\ %*
 set statusline+=%=%-14.(%l,%c%V%)\ %p%%
 
 
