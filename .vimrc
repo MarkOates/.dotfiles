@@ -53,9 +53,9 @@ filetype plugin on " for nerdcommenter
 
 
 " start NERDTree upon entering VIM
-autocmd VimEnter * NERDTree " starts nerdtree when opening vim
-autocmd BufEnter * NERDTreeMirror " starts nerdtree when a new tab is opened
-autocmd VimEnter * wincmd p " after opening nerdtree, will move the cursor back to the window
+" autocmd VimEnter * NERDTree " starts nerdtree when opening vim
+" autocmd BufEnter * NERDTreeMirror " starts nerdtree when a new tab is opened
+" autocmd VimEnter * wincmd p " after opening nerdtree, will move the cursor back to the window
 
 
 " Basics
