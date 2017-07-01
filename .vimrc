@@ -192,3 +192,11 @@ autocmd Filetype cpp setlocal expandtab tabstop=3 shiftwidth=3 softtabstop=3
 " remap the ; key to be ;
 nnoremap ; :
 vnoremap ; :
+
+
+
+" Ignore some folders and files for CtrlP indexing
+let g:ctrlp_custom_ignore = {
+  \ 'dir':  '\.git$\|\.yardoc\|public$|log\|tmp$',
+  \ 'file': '\.so$\|\.dat$|\.DS_Store$|\.o$|\.obj$|\.lib$|\.a$|'
+  \ }
