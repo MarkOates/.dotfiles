@@ -200,3 +200,8 @@ let g:ctrlp_custom_ignore = {
   \ 'dir':  '\.git$\|\.yardoc\|public$|log\|tmp$',
   \ 'file': '\.so$\|\.dat$|\.DS_Store$|\.o$|\.obj$|\.lib$|\.a$|'
   \ }
+
+
+" add shortcuts for nerdtree commands
+command Nt :NERDTree
+command Ntf :NERDTreeFind
