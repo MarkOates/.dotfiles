@@ -33,6 +33,7 @@ alias gl1mh='git log --pretty=tformat:'\''%C(yellow)%h%Creset%x09%an%x09%ad%x09%
 alias gl8='git log --pretty=tformat:'\''%C(yellow)%h%Creset%x09%an%x09%ad%x09%s'\'' --date=short -8'
 alias gb='git branch'
 alias ga='git add'
+alias gp='git pull'
 alias gr='git reset'
 alias gc='git checkout'
 alias gap='git add --patch'
