@@ -53,6 +53,7 @@ alias dc='dev console'
 alias ds='dev server'
 alias rc='rails console'
 alias rs='rails server'
+alias vi='vim'
 
 
 
