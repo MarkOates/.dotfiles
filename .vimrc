@@ -40,9 +40,9 @@ Plugin 'tikhomirov/vim-glsl'
 "Plugin 'kien/rainbow_parentheses.vim'
 Plugin 'Valloric/YouCompleteMe'
 
-Plugin 'EvanDotPro/nerdtree-chmod' " adds a chmod option in NERDTree 'm' menu
 Plugin 'scrooloose/nerdtree'
 Plugin 'scrooloose/nerdcommenter'
+Plugin 'EvanDotPro/nerdtree-chmod' " adds a chmod option in NERDTree 'm' menu
 Plugin 'Yggdroot/indentLine' " hilights indents
 
 call vundle#end()
