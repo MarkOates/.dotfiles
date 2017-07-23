@@ -38,6 +38,7 @@ Plugin 'tikhomirov/vim-glsl'
 "Plugin 'mxw/vim-jsx'
 "Plugin 'elixir-lang/vim-elixir'
 "Plugin 'kien/rainbow_parentheses.vim'
+Plugin 'Valloric/YouCompleteMe'
 
 Plugin 'EvanDotPro/nerdtree-chmod' " adds a chmod option in NERDTree 'm' menu
 Plugin 'scrooloose/nerdtree'
