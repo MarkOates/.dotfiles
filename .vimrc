@@ -38,7 +38,7 @@ Plugin 'tikhomirov/vim-glsl'
 "Plugin 'mxw/vim-jsx'
 "Plugin 'elixir-lang/vim-elixir'
 "Plugin 'kien/rainbow_parentheses.vim'
-Plugin 'Valloric/YouCompleteMe'
+"Plugin 'Valloric/YouCompleteMe'
 
 Plugin 'scrooloose/nerdtree'
 Plugin 'scrooloose/nerdcommenter'
@@ -71,7 +71,7 @@ set backup " backup current file
 set splitright
 set splitbelow
 set mouse=a
-set clipboard=unnamed
+"set clipboard=unnamed
 "let mapleader='.'
 
 
@@ -168,8 +168,8 @@ au BufNewFile,BufRead *.es6 set filetype=javascript
 
 
 " Have the enter keys create a newline in edit mode
-"map <Enter> o<ESC>
-"map <S-Enter> O<ESC>
+map <Enter> o<ESC>
+map <S-Enter> O<ESC>
 
 
 " disable auto-formatting of comments
@@ -198,7 +198,7 @@ vnoremap ; :
 
 " Ignore some folders and files for CtrlP indexing
 let g:ctrlp_custom_ignore = {
-  \ 'dir':  '\.git$\|\.yardoc\|public$|log\|tmp$',
+  \ 'dir':  '\.git$\|\obj$\|\.yardoc\|public$|log\|tmp$',
   \ 'file': '\.so$\|\.dat$|\.DS_Store$|\.o$|\.obj$|\.lib$|\.a$',
   \ }
 
@@ -206,3 +206,6 @@ let g:ctrlp_custom_ignore = {
 " add shortcuts for nerdtree commands
 command Nt :NERDTree
 command Ntf :NERDTreeFind
+
+
+"set clipboard=unnamed
