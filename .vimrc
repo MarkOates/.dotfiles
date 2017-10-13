@@ -168,8 +168,8 @@ au BufNewFile,BufRead *.es6 set filetype=javascript
 
 
 " Have the enter keys create a newline in edit mode
-"map <Enter> o<ESC>
-"map <S-Enter> O<ESC>
+map <Enter> o<ESC>
+map <S-Enter> O<ESC>
 
 
 " disable auto-formatting of comments
