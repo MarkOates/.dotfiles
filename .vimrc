@@ -71,7 +71,7 @@ set backup " backup current file
 set splitright
 set splitbelow
 set mouse=a
-set clipboard=unnamed
+"set clipboard=unnamed
 "let mapleader='.'
 
 
