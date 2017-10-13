@@ -4,6 +4,7 @@ filetype off
 set rtp+=~/.vim/bundle/Vundle.vim
 call vundle#begin()
 
+let g:yankring_clipboard_monitor=0
 
 " for those fancy colors
 Plugin 'chriskempson/base16-vim'
@@ -206,3 +207,6 @@ let g:ctrlp_custom_ignore = {
 " add shortcuts for nerdtree commands
 command Nt :NERDTree
 command Ntf :NERDTreeFind
+
+
+set clipboard=unnamed
