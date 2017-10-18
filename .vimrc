@@ -210,3 +210,8 @@ command Ntf :NERDTreeFind
 
 
 set clipboard=unnamed
+
+
+" ctrl+k runs clang-format in vim (on the selection or the whole file)
+map <C-K> :pyf /usr/local/Cellar/clang-format/2017-06-22/share/clang/clang-format.py<cr>
+imap <C-K> <c-o>:pyf /usr/local/Cellar/clang-format/2017-06-22/share/clang/clang-format.py<cr>
