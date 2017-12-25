@@ -50,7 +50,7 @@ call vundle#end()
 
 syntax on
 filetype plugin indent on
-let mapleader="," " for nerdcommenter
+"let mapleader="," " for nerdcommenter
 filetype plugin on " for nerdcommenter
 
 
