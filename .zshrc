@@ -23,6 +23,16 @@ export LSCOLORS=GxFxCxDxBxegedabagaced
 export PATH=$PATH:/Users/markoates/Repos/CastXMLSuperbuild-build/castxml/bin
 
 
+function git_fixup(){
+  git commit -m "f $1"
+  echo '(dummy content)' > 'foobar.txt'
+  git add .
+  git commit -m 'temporary commit of worktree changes'
+  git rebase -i $1~
+  git reset head~
+  rm 'foobar.txt'
+}
+
 
 # convience aliases for git
 alias gs='git status'
@@ -36,6 +46,7 @@ alias gb='git branch'
 alias ga='git add'
 alias gp='git pull'
 alias gr='git reset'
+alias gf='git_fixup'
 alias gc='git checkout'
 alias gap='git add --patch'
 # alias gc='git checkout'
