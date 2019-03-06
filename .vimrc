@@ -13,6 +13,7 @@ set conceallevel=0
 Plugin 'chriskempson/base16-vim'
 
 " tool integrations
+Plugin 'sentientmonkey/vim-flog'
 Plugin 'tpope/vim-fugitive'
 "Plugin 'tpope/vim-git'
 "Plugin 'tpope/vim-surround'
@@ -20,7 +21,7 @@ Plugin 'tpope/vim-fugitive'
 " Plugin 'tpope/vim-sleuth'
 Plugin 'tpope/vim-rails'
 Plugin 'airblade/vim-gitgutter'
-Plugin 'MarkOates/project-file-switcher'
+"Plugin 'MarkOates/project-file-switcher'
 "Plugin 'MarkOates/first_vim_plugin'
 Plugin 'tpope/vim-surround'
 "Plugin 'MarkOates/vim-clipboard'
@@ -242,3 +243,5 @@ autocmd VimEnter * if argc() == 0 && !exists("s:std_in") | NERDTree | endif
 " let g:ctrlp_user_command = 'find %s -path ./node_modules -prune -o -path ./public/uploads -prune -o -path ./.git -prune -o -type f -print'
 " let g:ctrlp_user_command = 'find %s -not \( -path node_modules -prune \) -not \( -path public/uploads -prune \) -type f'
 " let g:ctrlp_user_command = 'find %s -type f'
+
+silent exe "g:flog_enable"
