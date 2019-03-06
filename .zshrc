@@ -13,6 +13,11 @@ mkcd () {
 }
 
 
+kitkill() {
+  ps aux | grep sewing | grep node_modules | awk "{print $2}" | xargs kill
+}
+
+
 # have readable folder/file colors in the shell
 export CLICOLOR=1
 export LSCOLORS=GxFxCxDxBxegedabagaced
@@ -21,6 +26,9 @@ export LSCOLORS=GxFxCxDxBxegedabagaced
 
 # path stuff
 export PATH=$PATH:/Users/markoates/Repos/CastXMLSuperbuild-build/castxml/bin
+export PATH="$PATH:/usr/bin:/usr/local/bin/" # for https://stackoverflow.com/a/3958169/6072362
+
+alias h='~/Repos/hexagon/bin/programs/hexagon'
 
 
 function git_fixup(){
@@ -35,17 +43,22 @@ function git_fixup(){
 
 
 # convience aliases for git
-alias gs='git status'
-alias gd='git diff'
-alias gds='git diff --staged'
+alias m='make -j8'
+alias mc='make clean'
+alias mt='make tests -j8'
+alias gs='echo " ------------------ USE FANCY STATUS INSTEAD -------------------"; git status'
+alias gd='echo " ------------------ USE FANCY STATUS INSTEAD -------------------"; git diff'
+alias gds='echo " ------------------ USE FANCY STATUS INSTEAD -------------------"; git diff --staged'
 alias gl1mh='git log --pretty=tformat:'\''%an%x09%ad%x09%C(yellow)%h%Creset%x09%s'\'' --date=format:'\''%Y-%m-%d %H:%M:%S'\''  master..HEAD'
-alias gl='gl1mh'
+alias gl='echo " ------------------ USE FANCY LOG INSTEAD -------------------"; gl1mh'
 alias gla='git log --pretty=tformat:'\''%C(yellow)%h%Creset%x09%an%x09%ad%x09%s'\'' --date=format:'\''%Y-%m-%d %H:%M:%S'\'''
+alias gsh='git show head'
 alias gl8='gla -8'
-alias gb='git branch'
+alias gb='git branch --sort=-committerdate'
 alias ga='git add'
 alias gp='git pull'
 alias gr='git reset'
+alias grp='git reset --patch'
 alias gf='git_fixup'
 alias gc='git checkout'
 alias gap='git add --patch'
@@ -54,6 +67,7 @@ alias gg='git grep'
 alias gdt='git diff-tree --no-commit-id --name-only -r'
 alias gcm='git commit -m'
 alias gca='git commit --amend'
+# alias kitkill="ps aux | grep sewing | grep node_modules | awk '{print $2}' | xargs kill"
 
 
 
@@ -66,7 +80,24 @@ alias ds='dev server'
 alias rc='rails console'
 alias rs='rails server'
 alias ssdt='spring stop; dev test'
-alias vi='vim'
+#alias vi='h -f '
+#alias no_i_want_to_vim='vim'
+
+
+
+# aliases to projekts
+alias fb='~/Repos/ncurses-art/bin/fancy_branch'
+alias fl='~/Repos/ncurses-art/bin/fancy_log'
+alias fs='~/Repos/ncurses-art/bin/fancy_stager'
+alias ff='~/Repos/ncurses-art/bin/fancy_find'
+alias fc='~/Repos/ncurses-art/bin/fancy_command'
+alias fd='~/Repos/ncurses-art/bin/fancy_docs'
+alias rcg='~/Repos/ncurses-art/bin/rails_class_generator'
+alias b='~/Repos/ncurses-art/bin/builder2'
+alias g='~/Repos/ncurses-art/bin/generator'
+alias qfj='~/Repos/blast/bin/programs/quintessence_from_json'
+alias qfy='~/Repos/blast/bin/programs/quintessence_from_yaml'
+alias project_filename_generator='~/Repos/ncurses-art/bin/project_filename_generator'
 
 
 

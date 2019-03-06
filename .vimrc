@@ -5,6 +5,9 @@ set rtp+=~/.vim/bundle/Vundle.vim
 call vundle#begin()
 
 let g:yankring_clipboard_monitor=0
+let g:vim_json_syntax_conceal=0
+let g:vim_json_syntax_conceal = 0
+set conceallevel=0
 
 " for those fancy colors
 Plugin 'chriskempson/base16-vim'
@@ -17,8 +20,13 @@ Plugin 'tpope/vim-fugitive'
 " Plugin 'tpope/vim-sleuth'
 Plugin 'tpope/vim-rails'
 Plugin 'airblade/vim-gitgutter'
+Plugin 'MarkOates/project-file-switcher'
+"Plugin 'MarkOates/first_vim_plugin'
+Plugin 'tpope/vim-surround'
+"Plugin 'MarkOates/vim-clipboard'
 "Plugin 'mattn/webapi-vim'
 "Plugin 'mattn/gist-vim'
+Plugin 'leafgarland/typescript-vim'
 "Plugin 'rizzatti/dash.vim'
 
 " file browser
@@ -169,9 +177,14 @@ au BufNewFile,BufRead *.es6 set filetype=javascript
 
 
 " Have the enter keys create a newline in edit mode
-map <Enter> o<ESC>
-map <S-Enter> O<ESC>
-
+map <unique> <Enter> o<ESC>
+map <unique> <S-Enter> O<ESC>
+map <unique> <Leader>t :tabnew<CR>
+map <unique> <Leader>m :NERDTree<CR>
+map <unique> <Leader>n :NERDTreeFind<CR>
+map <unique> <Leader>s :w<CR>
+map <unique> <Tab> i
+imap <unique> <Tab> <Esc>
 
 " disable auto-formatting of comments
 autocmd BufNewFile,BufRead * setlocal formatoptions-=r " prevents auto-adding comments on ENTER
@@ -215,3 +228,17 @@ set clipboard=unnamed
 " ctrl+k runs clang-format in vim (on the selection or the whole file)
 map <C-K> :pyf /usr/local/Cellar/clang-format/2017-06-22/share/clang/clang-format.py<cr>
 imap <C-K> <c-o>:pyf /usr/local/Cellar/clang-format/2017-06-22/share/clang/clang-format.py<cr>
+
+
+set conceallevel=0
+
+
+" Automatically open NerdTree when VIM is opened with no files
+autocmd StdinReadPre * let s:std_in=1
+autocmd VimEnter * if argc() == 0 && !exists("s:std_in") | NERDTree | endif
+
+
+" Specify the user command for ctrlp
+" let g:ctrlp_user_command = 'find %s -path ./node_modules -prune -o -path ./public/uploads -prune -o -path ./.git -prune -o -type f -print'
+" let g:ctrlp_user_command = 'find %s -not \( -path node_modules -prune \) -not \( -path public/uploads -prune \) -type f'
+" let g:ctrlp_user_command = 'find %s -type f'
