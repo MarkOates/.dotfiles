@@ -1,6 +1,17 @@
 set nocompatible
 filetype off
 
+
+" Install vim from brew
+" "brew install vim --with-override-system-vi"
+" Mac's default vim does not come compiled with "+clipboard" feature, so the
+" easiest way is to install from brew.  Note that after vim has installed, you
+" will need to close and restart your terminal window so that the new version
+" of "vi" will be the default by your shell.
+" Be sure that +clipboard feature has been installed.  Type "vim --version"
+" and you should see "+clipboard".
+
+
 set rtp+=~/.vim/bundle/Vundle.vim
 call vundle#begin()
 
