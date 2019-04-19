@@ -29,6 +29,11 @@ export PATH=$PATH:/Users/markoates/Repos/CastXMLSuperbuild-build/castxml/bin
 export PATH="$PATH:/usr/bin:/usr/local/bin/" # for https://stackoverflow.com/a/3958169/6072362
 
 alias h='~/Repos/hexagon/bin/programs/hexagon'
+alias lilypond='~/Repos/fullscore/bin/scripts/lilypond'
+alias lily=lilypond
+
+
+alias ngrok='~/Applications/ngrok'
 
 
 function git_fixup(){
@@ -95,6 +100,7 @@ alias fd='~/Repos/ncurses-art/bin/fancy_docs'
 alias rcg='~/Repos/ncurses-art/bin/rails_class_generator'
 alias b='~/Repos/ncurses-art/bin/builder2'
 alias g='~/Repos/ncurses-art/bin/generator'
+alias cg='~/Repos/ncurses-art/bin/component_generator'
 alias qfj='~/Repos/blast/bin/programs/quintessence_from_json'
 alias qfy='~/Repos/blast/bin/programs/quintessence_from_yaml'
 alias project_filename_generator='~/Repos/ncurses-art/bin/project_filename_generator'
