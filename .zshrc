@@ -89,6 +89,11 @@ alias ssdt='spring stop; dev test'
 #alias no_i_want_to_vim='vim'
 
 
+function vim_with_component_setup(){
+  vim -c "so ~/Repos/vim-component-arranger/comparr.vim | call ArrangeVimFor(\"$1\")"
+}
+
+
 
 # aliases to projekts
 alias fb='~/Repos/ncurses-art/bin/fancy_branch'
