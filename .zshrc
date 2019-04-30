@@ -109,6 +109,7 @@ alias cg='~/Repos/ncurses-art/bin/component_generator'
 alias qfj='~/Repos/blast/bin/programs/quintessence_from_json'
 alias qfy='~/Repos/blast/bin/programs/quintessence_from_yaml'
 alias project_filename_generator='~/Repos/ncurses-art/bin/project_filename_generator'
+alias lsq="find quintessence/**/*.q.*"
 
 
 
