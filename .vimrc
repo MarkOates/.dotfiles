@@ -24,7 +24,7 @@ set conceallevel=0
 Plugin 'chriskempson/base16-vim'
 
 " tool integrations
-Plugin 'sentientmonkey/vim-flog'
+"Plugin 'sentientmonkey/vim-flog'
 Plugin 'tpope/vim-fugitive'
 "Plugin 'tpope/vim-git'
 "Plugin 'tpope/vim-surround'
@@ -33,7 +33,7 @@ Plugin 'tpope/vim-fugitive'
 Plugin 'tpope/vim-rails'
 Plugin 'airblade/vim-gitgutter'
 "Plugin 'MarkOates/project-file-switcher'
-"Plugin 'MarkOates/first_vim_plugin'
+Plugin 'MarkOates/first_vim_plugin'
 Plugin 'tpope/vim-surround'
 "Plugin 'MarkOates/vim-clipboard'
 "Plugin 'mattn/webapi-vim'
@@ -183,6 +183,8 @@ au BufRead,BufNewFile *.md setlocal textwidth=80
 " extension aliases
 au BufNewFile,BufRead *.es6 set filetype=javascript
 
+au BufRead,BufNewFile *.stc set filetype=cel
+
 " quick tab navigation
 "nmap <silent> <leader>c :tabprev<CR>
 ""nmap <silent> <leader>r :tabnext<CR>
@@ -256,3 +258,13 @@ autocmd VimEnter * if argc() == 0 && !exists("s:std_in") | NERDTree | endif
 " let g:ctrlp_user_command = 'find %s -type f'
 
 silent exe "g:flog_enable"
+
+
+" https://vi.stackexchange.com/a/19974
+let g:indentLine_setConceal = 0
+" default ''.
+" n for Normal mode
+" v for Visual mode
+" i for Insert mode
+" c for Command line editing, for 'incsearch'
+let g:indentLine_concealcursor = ""
