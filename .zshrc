@@ -110,6 +110,8 @@ alias qfj='~/Repos/blast/bin/programs/quintessence_from_json'
 alias qfy='~/Repos/blast/bin/programs/quintessence_from_yaml'
 alias project_filename_generator='~/Repos/ncurses-art/bin/project_filename_generator'
 alias lsq="find quintessence/**/*.q.*"
+alias bb="ruby /Users/markoates/Repos/beebot/lib/runner.rb"
+alias beebot="bb"
 
 
 
@@ -188,3 +190,8 @@ PROMPT3='{ … }  '
 
 
 [ -f /opt/dev/dev.sh ] && source /opt/dev/dev.sh
+
+
+# for chruby
+source /usr/local/opt/chruby/share/chruby/chruby.sh
+source /usr/local/opt/chruby/share/chruby/auto.sh
