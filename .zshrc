@@ -75,6 +75,9 @@ alias gca='git commit --amend'
 # alias kitkill="ps aux | grep sewing | grep node_modules | awk '{print $2}' | xargs kill"
 
 
+alias okta='open https://shopify.okta.com/app/UserHome'
+
+
 
 # conviences for werk
 alias d='dev'
@@ -106,7 +109,7 @@ alias fd='~/Repos/ncurses-art/bin/fancy_docs'
 alias rcg='~/Repos/ncurses-art/bin/rails_class_generator'
 alias status='~/Repos/ncurses-art/bin/status_fetcher'
 alias b='~/Repos/ncurses-art/bin/builder2'
-alias g='~/Repos/bin/bin/generator'
+alias g='~/Repos/blast/bin/generator'
 alias cg='~/Repos/blast/bin/component_generator'
 alias qfj='~/Repos/blast/bin/programs/quintessence_from_json'
 alias qfy='~/Repos/blast/bin/programs/quintessence_from_yaml'
@@ -195,5 +198,6 @@ PROMPT3='{ … }  '
 
 
 # for chruby
-source /usr/local/opt/chruby/share/chruby/chruby.sh
-source /usr/local/opt/chruby/share/chruby/auto.sh
+#source /usr/local/share/chruby/chruby.sh
+#source /usr/local/share/chruby/auto.sh
+
