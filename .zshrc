@@ -99,21 +99,21 @@ function vim_with_component_setup(){
 
 
 # aliases to projekts
-alias fb='~/Repos/ncurses-art/bin/fancy_branch'
-alias fl='~/Repos/ncurses-art/bin/fancy_log'
-alias fs='~/Repos/ncurses-art/bin/fancy_stager'
-alias ff='~/Repos/ncurses-art/bin/fancy_find'
-alias fc='~/Repos/ncurses-art/bin/fancy_command'
-alias fcl='~/Repos/ncurses-art/bin/fancy_component_lister'
-alias fd='~/Repos/ncurses-art/bin/fancy_docs'
-alias rcg='~/Repos/ncurses-art/bin/rails_class_generator'
-alias status='~/Repos/ncurses-art/bin/status_fetcher'
-alias b='~/Repos/ncurses-art/bin/builder2'
+alias fb='~/Repos/ncurses-art/bin/programs/fancy_branch'
+alias fl='~/Repos/ncurses-art/bin/programs/fancy_log'
+alias fs='~/Repos/ncurses-art/bin/programs/fancy_stager'
+alias ff='~/Repos/ncurses-art/bin/programs/fancy_find'
+alias fc='~/Repos/ncurses-art/bin/programs/fancy_command'
+alias fcl='~/Repos/ncurses-art/bin/programs/fancy_component_lister'
+alias fd='~/Repos/ncurses-art/bin/programs/fancy_docs'
+alias rcg='~/Repos/ncurses-art/bin/programs/rails_class_generator'
+alias status='~/Repos/ncurses-art/bin/programs/status_fetcher'
+alias b='~/Repos/ncurses-art/bin/programs/builder2'
 alias g='~/Repos/blast/bin/programs/generator'
 alias cg='~/Repos/blast/bin/programs/component_generator'
 alias qfj='~/Repos/blast/bin/programs/quintessence_from_json'
 alias qfy='~/Repos/blast/bin/programs/quintessence_from_yaml'
-alias project_filename_generator='~/Repos/ncurses-art/bin/project_filename_generator'
+alias project_filename_generator='~/Repos/ncurses-art/bin/programs/project_filename_generator'
 alias lsq="find quintessence/**/*.q.*"
 alias bb="ruby /Users/markoates/Repos/beebot/lib/runner.rb"
 alias beebot="bb"
