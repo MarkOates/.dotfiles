@@ -118,6 +118,7 @@ alias lsq="find quintessence/**/*.q.*"
 alias bb="ruby /Users/markoates/Repos/beebot/lib/runner.rb"
 alias beebot="bb"
 alias project='function _change_project_directory(){ cd ~/Repos/$1; };_change_project_directory'
+alias proj="project"
 
 
 
