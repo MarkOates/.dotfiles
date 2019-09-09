@@ -122,6 +122,7 @@ alias bb="ruby /Users/markoates/Repos/beebot/lib/runner.rb"
 alias beebot="bb"
 alias project='function _change_project_directory(){ cd ~/Repos/$1; };_change_project_directory'
 alias pro="project"
+alias project_status="ruby /Users/markoates/Desktop/ProjectSetupChecker/project_setup_check.rb"
 
 
 
