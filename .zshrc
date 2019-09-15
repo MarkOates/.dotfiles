@@ -106,6 +106,9 @@ function _move_to_projects_dir_and_generate(){
   cd $PROJECTS_DIRECTORY
   ~/Repos/blast/bin/programs/generator $1
   cd $1
+  git init
+  git add .
+  git commit -m 'Initial commit'
 }
 
 function _move_to_projects_dir(){
@@ -140,6 +143,7 @@ alias beebot="bb"
 alias project='_move_to_projects_dir'
 alias p="project"
 alias project_status="ruby /Users/markoates/Desktop/ProjectSetupChecker/project_setup_check.rb"
+alias refresh="source ~/.zshrc"
 
 
 
