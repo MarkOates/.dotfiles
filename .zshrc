@@ -102,6 +102,12 @@ function vim_with_component_setup(){
 
 
 
+function _move_to_projects_dir_and_generate(){
+  cd $PROJECTS_DIRECTORY
+  ~/Repos/blast/bin/programs/generator $1
+  cd $1
+}
+
 function _move_to_projects_dir(){
   cd "$PROJECTS_DIRECTORY/$1"
 }
@@ -123,7 +129,7 @@ alias rcg='~/Repos/ncurses-art/bin/programs/rails_class_generator'
 alias status='~/Repos/ncurses-art/bin/programs/status_fetcher'
 alias system_status='~/Repos/ncurses-art/bin/programs/system_test'
 alias b='~/Repos/ncurses-art/bin/programs/builder2'
-alias g='~/Repos/blast/bin/programs/generator'
+alias g='_move_to_projects_dir_and_generate'
 alias cg='~/Repos/blast/bin/programs/component_generator'
 alias qfj='~/Repos/blast/bin/programs/quintessence_from_json'
 alias qfy='~/Repos/blast/bin/programs/quintessence_from_yaml'
