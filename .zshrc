@@ -23,6 +23,10 @@ export CLICOLOR=1
 export LSCOLORS=GxFxCxDxBxegedabagaced
 
 
+# set the projects directory
+export PROJECTS_DIRECTORY=/Users/markoates/Repos
+
+
 
 # path stuff
 export PATH=$PATH:/Users/markoates/Repos/CastXMLSuperbuild-build/castxml/bin
