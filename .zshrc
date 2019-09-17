@@ -102,12 +102,14 @@ function vim_with_component_setup(){
 
 
 
+# https://stackoverflow.com/questions/40429865/how-to-exit-bash-function-if-error
+
 function _move_to_projects_dir_and_generate(){
-  cd $PROJECTS_DIRECTORY
-  ~/Repos/blast/bin/programs/generator $1
-  cd $1
-  git init
-  git add .
+  cd $PROJECTS_DIRECTORY && \
+  ~/Repos/blast/bin/programs/generator $1 && \
+  cd $1 && \
+  git init && \
+  git add . && \
   git commit -m 'Initial commit'
 }
 
