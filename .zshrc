@@ -32,7 +32,7 @@ export PROJECTS_DIRECTORY=/Users/markoates/Repos
 export PATH=$PATH:/Users/markoates/Repos/CastXMLSuperbuild-build/castxml/bin
 export PATH="$PATH:/usr/bin:/usr/local/bin/" # for https://stackoverflow.com/a/3958169/6072362
 
-alias h='~/Repos/hexagon/bin/programs/hexagon'
+alias h='open /Applications/Hexagon.app'
 alias lilypond='~/Repos/fullscore/bin/scripts/lilypond'
 alias lily=lilypond
 
