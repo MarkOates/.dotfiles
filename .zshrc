@@ -80,6 +80,11 @@ alias rr='rerun -c -p "**/*.{rb,js,coffee,css,scss,sass,erb,html,haml,ru,yml,sli
 # alias kitkill="ps aux | grep sewing | grep node_modules | awk '{print $2}' | xargs kill"
 
 
+
+alias l='~/Repos/ncurses-art/bin/programs/fancy_list /Users/markoates/Repos/me/fancy_lists/fancy_immediate_list.txt green'
+
+
+
 alias okta='open https://shopify.okta.com/app/UserHome'
 
 
