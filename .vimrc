@@ -157,12 +157,12 @@ hi User1 ctermbg=4 ctermfg=7
 hi User2 ctermbg=1 ctermfg=7
 hi User3 ctermbg=3 ctermfg=1
 set laststatus=2
-set statusline=%1*\ %t\ %*
+set statusline=%1*\ %{expand('%:p:h:t')}/%t\ %*
 set statusline+=%2*%m%*
-" set statusline+=\ [%f]
-" set statusline+=\ [%{getcwd()}]
+"" set statusline+=\ [%f]
+"" set statusline+=\ [%{getcwd()}]
 set statusline+=%3*\ %*
-" set statusline+=%3*\ %{fugitive#statusline()}\ %*
+"" set statusline+=%3*\ %{fugitive#statusline()}\ %*
 set statusline+=%=%-14.(%l,%c%V%)\ %p%%
 
 
