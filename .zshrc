@@ -1,3 +1,5 @@
+# clear all aliases (this is so that a call to "source .zshrc" will not leave previously set aliases)
+unalias -m '*'
 
 
 # convenience aliases for shell
