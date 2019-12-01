@@ -148,6 +148,7 @@ alias generate='_move_to_projects_dir_and_generate'
 alias cg='~/Repos/blast/bin/programs/component_generator'
 alias qfj='~/Repos/blast/bin/programs/quintessence_from_json'
 alias qfy='~/Repos/blast/bin/programs/quintessence_from_yaml'
+alias symlink_component='~/Repos/blast/bin/programs/symlink_component_from_another_project'
 alias project_filename_generator='~/Repos/ncurses-art/bin/programs/project_filename_generator'
 alias lsq="find quintessence/**/*.q.*"
 alias bb="ruby /Users/markoates/Repos/beebot/lib/runner.rb"
