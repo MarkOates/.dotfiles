@@ -80,6 +80,7 @@ alias gcm='git commit -m'
 alias gca='git commit --amend'
 alias rr='rerun -c -p "**/*.{rb,js,coffee,css,scss,sass,erb,html,haml,ru,yml,slim,md,feature,c,h,cpp,hpp,txt,cfg}"'
 # alias kitkill="ps aux | grep sewing | grep node_modules | awk '{print $2}' | xargs kill"
+alias create_release='~/Repos/ncurses-art/bin/programs/create_release'
 
 
 
