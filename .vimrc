@@ -225,10 +225,12 @@ vnoremap ; :
 
 
 " Ignore some folders and files for CtrlP indexing
-let g:ctrlp_custom_ignore = {
-  \ 'dir':  '\.git$\|\obj$\|\.yardoc\|public$|log\|tmp$',
-  \ 'file': '\.so$\|\.dat$|\.DS_Store$|\.o$|\.obj$|\.lib$|\.a$',
-  \ }
+let g:ctrlp_custom_ignore = {  'dir': 'obj$\|node_modules$\|public$' }
+  " \ 'dir':  '\.git$\|\obj$\|\.yardoc\|public$|log\|tmp$',
+  " \ 'file': '\.so$\|\.dat$|\.DS_Store$|\.o$|\.obj$|\.lib$|\.a$',
+  " \ }
+" Set the max depth to 'infinite' because files at the default depth are not found
+let g:ctrlp_max_files=0
 
 
 " add shortcuts for nerdtree commands
