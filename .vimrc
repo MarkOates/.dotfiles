@@ -225,7 +225,7 @@ vnoremap ; :
 
 
 " Ignore some folders and files for CtrlP indexing
-let g:ctrlp_custom_ignore = {  'dir': 'obj$\|node_modules$\|public$' }
+let g:ctrlp_custom_ignore = {  'dir': 'obj$\|node_modules$\|tmp/cache$|public$' }
   " \ 'dir':  '\.git$\|\obj$\|\.yardoc\|public$|log\|tmp$',
   " \ 'file': '\.so$\|\.dat$|\.DS_Store$|\.o$|\.obj$|\.lib$|\.a$',
   " \ }
