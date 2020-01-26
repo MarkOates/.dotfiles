@@ -3,3 +3,5 @@ alias gds='echo " ------------------ USE FANCY STATUS INSTEAD ------------------
 alias ga='git add'
 alias gs='echo " ------------------ USE FANCY STATUS INSTEAD -------------------"; git status'
 alias gcm='git commit -m'
+
+export MSYS=winsymlinks:nativestrict
