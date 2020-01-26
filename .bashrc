@@ -4,6 +4,7 @@ alias ga='git add'
 alias gs='echo " ------------------ USE FANCY STATUS INSTEAD -------------------"; git status'
 alias gcm='git commit -m'
 alias gca='git commit --amend'
+alias gc='git checkout'
 alias gr='git reset'
 alias grp='git reset --patch'
 
