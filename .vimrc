@@ -1,4 +1,5 @@
 
+
 " Ensure searched text is hilighted
 set hlsearch
 
@@ -6,13 +7,20 @@ set hlsearch
 nnoremap ; :
 vnoremap ; :
 
-" Setup Vundle, and add NERDTree
+
+" Setup Vundle and run plugins
 set rtp+=~/.vim/bundle/Vundle.vim
 call vundle#begin()
 
 Plugin 'scrooloose/nerdtree'
+Plugin 'EvanDotPro/nerdtree-chmod' " adds a chmod option in NERDTree 'm' menu
 
 call vundle#end()
+
+
+" Workaround to prevent NERDTree from showing ^G characters in front of nodes in the tree
+" see: https://github.com/preservim/nerdtree/issues/928
+let g:NERDTreeNodeDelimiter = "\u00a0"
 
 
 function SetupDefault()
