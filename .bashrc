@@ -39,3 +39,7 @@ PATH="$PATH:$(ruby -e 'puts Gem.user_dir')/bin"
 
 # rerun alias
 alias rr='rerun --quiet -c -p "**/*.{rb,js,tsx,coffee,css,scss,sass,erb,html,haml,ru,yml,slim,md,feature,c,h,cpp,hpp,txt,cfg}"'
+
+
+export TERM=xterm-256color
+export TERMINFO=/mingw64/share/terminfo
