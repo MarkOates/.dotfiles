@@ -31,7 +31,10 @@ alias generate='_move_to_projects_dir_and_generate'
 alias cg='~/Repos/blast/bin/programs/component_generator'
 
 
-" This next line permits installed gem binaries to be run on the system
-" see this site for more details:
-" https://askubuntu.com/questions/406643/warning-you-dont-have-a-directory-in-your-path-gem-executables-will-not-run
-PATH="`ruby -e 'puts Gem.user_dir'`/bin:$PATH"
+# This next line permits installed gem binaries to be run on the system
+# see this site for more details:
+# https://askubuntu.com/questions/406643/warning-you-dont-have-a-directory-in-your-path-gem-executables-will-not-run
+PATH="$PATH:$(ruby -e 'puts Gem.user_dir')/bin"
+
+# rerun alias
+alias rr='rerun --quiet -c -p "**/*.{rb,js,tsx,coffee,css,scss,sass,erb,html,haml,ru,yml,slim,md,feature,c,h,cpp,hpp,txt,cfg}"'
