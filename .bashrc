@@ -1,4 +1,5 @@
 alias vi='vim'
+alias gd='echo " ------------------ USE FANCY STATUS INSTEAD -------------------"; git diff'
 alias gds='echo " ------------------ USE FANCY STATUS INSTEAD -------------------"; git diff --staged'
 alias ga='git add'
 alias gap='git add --patch'
