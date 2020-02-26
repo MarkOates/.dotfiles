@@ -294,3 +294,4 @@ function SetupDefault()
 endfunction
 
 
+call SetupDefault()
