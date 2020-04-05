@@ -95,7 +95,7 @@ alias okta='open https://shopify.okta.com/app/UserHome'
 
 
 # conviences for werk
-alias d='dev'
+#alias d='dev'
 alias dcd='dev cd'
 alias dt='dev test'
 alias dc='dev console'
