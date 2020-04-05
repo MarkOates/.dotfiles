@@ -82,6 +82,7 @@ alias rr='rerun --quiet -c -p "**/*.{rb,js,tsx,coffee,css,scss,sass,erb,html,ham
 # alias kitkill="ps aux | grep sewing | grep node_modules | awk '{print $2}' | xargs kill"
 alias create_release='~/Repos/ncurses-art/bin/programs/create_release'
 alias daemus='/Users/markoates/Repos/blast/bin/programs/daemus'
+alias d='daemus'
 
 
 
