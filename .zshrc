@@ -53,7 +53,8 @@ function git_fixup(){
 }
 
 
-# convience aliases for git
+# convience aliases
+alias f='find . | grep'
 alias m='make -j8'
 alias mc='make clean'
 alias mt='make tests -j8'
