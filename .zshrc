@@ -104,6 +104,7 @@ alias ds='dev server'
 alias rc='rails console'
 alias rs='rails server'
 alias ssdt='spring stop; dev test'
+alias vo='vi -o `fzf`'
 #alias vi='h -f '
 #alias no_i_want_to_vim='vim'
 
