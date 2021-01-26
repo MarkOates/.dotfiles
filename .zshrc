@@ -250,4 +250,7 @@ source /usr/local/opt/chruby/share/chruby/chruby.sh
 
 #source /usr/local/share/chruby/auto.sh
 
+export FZF_DEFAULT_COMMAND='rg --files --hidden --glob="!{.git/*}"'
+
 if [ -e /Users/markoates/.nix-profile/etc/profile.d/nix.sh ]; then . /Users/markoates/.nix-profile/etc/profile.d/nix.sh; fi # added by Nix installer
+

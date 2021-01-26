@@ -56,6 +56,8 @@ function SetupDefault()
   "Plugin 'MarkOates/project-file-switcher'
   Plugin 'MarkOates/first_vim_plugin'
   Plugin 'tpope/vim-surround'
+  Plugin 'junegunn/fzf'
+  Plugin 'junegunn/fzf.vim'
   "Plugin 'MarkOates/vim-clipboard'
   "Plugin 'mattn/webapi-vim'
   "Plugin 'mattn/gist-vim'
@@ -292,6 +294,18 @@ function SetupDefault()
   " c for Command line editing, for 'incsearch'
   let g:indentLine_concealcursor = ""
 endfunction
+
+nnoremap <silent> <leader>p :Files<cr>
+
+
+
+let g:rg_command = 'rg --column --line-number --no-heading --fixed-strings --ignore-case --hidden --follow --glob "!{.git/*,node_modules/*}" --color "always" '
+command! -bang -nargs=* Find call fzf#vim#grep(g:rg_command . shellescape(<q-args>), 1, <bang>0 ? fzf#vim#with_preview('up:60%') : fzf#vim#with_preview('right:50%'), <bang>0)
+
+" things
+
+nnoremap <leader>w :Find <C-R><C-W><cr>
+nnoremap <leader>w :Find <C-R><C-W><cr>
 
 
 call SetupDefault()
