@@ -53,6 +53,7 @@ function SetupDefault()
   " Plugin 'tpope/vim-sleuth'
   Plugin 'tpope/vim-rails'
   Plugin 'airblade/vim-gitgutter'
+  Plugin 'vim-test/vim-test'
   "Plugin 'MarkOates/project-file-switcher'
   Plugin 'MarkOates/first_vim_plugin'
   Plugin 'tpope/vim-surround'
@@ -306,6 +307,14 @@ command! -bang -nargs=* Find call fzf#vim#grep(g:rg_command . shellescape(<q-arg
 
 nnoremap <leader>w :Find <C-R><C-W><cr>
 nnoremap <leader>w :Find <C-R><C-W><cr>
+
+
+
+" Testing
+let test#strategy = "basic"
+nmap <silent> tn :TestNearest<cr>
+nmap <silent> tf :TestFile<cr>
+nmap <silent> tl :TestLast<cr>
 
 
 call SetupDefault()
