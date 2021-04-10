@@ -256,5 +256,8 @@ export FZF_DEFAULT_COMMAND='rg --files --hidden --glob="!{.git/*}"'
 alias git-clean-br="git branch --merged | egrep -v \"(^\*|master|dev)\" | xargs git branch -d"
 
 
-if [ -e /Users/markoates/.nix-profile/etc/profile.d/nix.sh ]; then . /Users/markoates/.nix-profile/etc/profile.d/nix.sh; fi # added by Nix installer
+#if [ -e /Users/markoates/.nix-profile/etc/profile.d/nix.sh ]; then . /Users/markoates/.nix-profile/etc/profile.d/nix.sh; fi # added by Nix installer
 
+
+# have ruby 2.6.5 be the default without stressing about versions
+chruby 2.6.5
