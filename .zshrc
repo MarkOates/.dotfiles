@@ -85,6 +85,7 @@ alias rr='rerun --quiet -c -p "**/*.{rb,js,tsx,coffee,css,scss,sass,erb,html,ham
 alias create_release='~/Repos/ncurses-art/bin/programs/create_release'
 alias daemus='/Users/markoates/Repos/hexagon/bin/programs/daemus'
 alias d='daemus'
+alias sc='symlink_component'
 
 
 
