@@ -89,7 +89,7 @@ alias sc='symlink_component'
 
 
 
-alias l='~/Repos/ncurses-art/bin/programs/fancy_list /Users/markoates/Repos/me/fancy_lists/fancy_immediate_list.txt green'
+alias l='~/Repos/blast/bin/programs/fancy_list /Users/markoates/Repos/me/fancy_lists/fancy_immediate_list.txt green'
 
 
 
@@ -136,28 +136,28 @@ function _move_to_projects_dir(){
 
 
 # aliases to projekts
-alias fb='~/Repos/ncurses-art/bin/programs/fancy_branch'
-alias fl='~/Repos/ncurses-art/bin/programs/fancy_log'
-alias fs='~/Repos/ncurses-art/bin/programs/fancy_stager'
-alias ff='~/Repos/ncurses-art/bin/programs/fancy_find'
-#alias fc='~/Repos/ncurses-art/bin/programs/fancy_command'
-alias fc='~/Repos/ncurses-art/bin/programs/fancy_list /Users/markoates/Repos/me/fancy_lists/fancy_commands.txt red'
-alias fcl='~/Repos/ncurses-art/bin/programs/fancy_component_lister'
-alias c='~/Repos/ncurses-art/bin/programs/fancy_component_lister'
-#alias fd='~/Repos/ncurses-art/bin/programs/fancy_docs'
-alias fd='~/Repos/ncurses-art/bin/programs/fancy_list /Users/markoates/Repos/me/fancy_lists/fancy_docs.txt white'
-alias rcg='~/Repos/ncurses-art/bin/programs/rails_class_generator'
-alias status='~/Repos/ncurses-art/bin/programs/ncurses_status_fetcher'
-alias games_status='~/Repos/ncurses-art/bin/programs/status_fetcher games'
-alias system_test='~/Repos/ncurses-art/bin/programs/system_test'
-alias b='~/Repos/ncurses-art/bin/programs/builder2'
+alias fb='~/Repos/blast/bin/programs/fancy_branch'
+alias fl='~/Repos/blast/bin/programs/fancy_log'
+alias fs='~/Repos/blast/bin/programs/fancy_stager'
+alias ff='~/Repos/blast/bin/programs/fancy_find'
+#alias fc='~/Repos/blast/bin/programs/fancy_command'
+alias fc='~/Repos/blast/bin/programs/fancy_list /Users/markoates/Repos/me/fancy_lists/fancy_commands.txt red'
+alias fcl='~/Repos/blast/bin/programs/fancy_component_lister'
+alias c='~/Repos/blast/bin/programs/fancy_component_lister'
+#alias fd='~/Repos/blast/bin/programs/fancy_docs'
+alias fd='~/Repos/blast/bin/programs/fancy_list /Users/markoates/Repos/me/fancy_lists/fancy_docs.txt white'
+alias rcg='~/Repos/blast/bin/programs/rails_class_generator'
+alias status='~/Repos/blast/bin/programs/ncurses_status_fetcher'
+alias games_status='~/Repos/blast/bin/programs/status_fetcher games'
+alias system_test='~/Repos/blast/bin/programs/system_test'
+alias b='~/Repos/blast/bin/programs/builder2'
 alias generate='_move_to_projects_dir_and_generate'
 alias cg='~/Repos/blast/bin/programs/component_generator'
 alias qfj='~/Repos/blast/bin/programs/quintessence_from_json'
 alias qfy='~/Repos/blast/bin/programs/quintessence_from_yaml'
 alias symlink_component='~/Repos/blast/bin/programs/symlink_component_from_another_project'
 alias rename_component='~/Repos/blast/bin/programs/component_renamer'
-alias project_filename_generator='~/Repos/ncurses-art/bin/programs/project_filename_generator'
+alias project_filename_generator='~/Repos/blast/bin/programs/project_filename_generator'
 alias lsq="find quintessence/**/*.q.*"
 alias bb="ruby /Users/markoates/Repos/beebot/lib/runner.rb"
 alias beebot="bb"
