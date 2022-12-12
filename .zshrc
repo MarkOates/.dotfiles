@@ -39,7 +39,7 @@ alias lilypond='~/Repos/fullscore/bin/scripts/lilypond'
 alias lily=lilypond
 
 
-alias ngrok='~/Applications/ngrok'
+# alias ngrok='~/Applications/ngrok'
 
 
 function git_fixup(){
