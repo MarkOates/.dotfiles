@@ -167,7 +167,7 @@ alias p="project"
 alias project_status="ruby /Users/markoates/Desktop/ProjectSetupChecker/project_setup_check.rb"
 alias refresh="source ~/.zshrc"
 alias kill_daemus="kill $(ps aux | grep "/Users/markoates/Repos/hexagon/bin/programs/daemus" | awk '{print $2}')"
-alias count_damus='ps aux | grep "/Users/markoates/Repos/hexagon/bin/programs/daemus" | grep "" -c'
+alias count_daemus='ps aux | grep "/Users/markoates/Repos/hexagon/bin/programs/daemus" | grep "" -c'
 
 
 
