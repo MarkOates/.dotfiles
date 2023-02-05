@@ -31,6 +31,7 @@ function _move_to_projects_dir(){
 
 alias generate='_move_to_projects_dir_and_generate'
 alias cg='~/Repos/blast/bin/programs/component_generator'
+alias status='~/Repos/blast/bin/programs/status'
 
 
 # This next line permits installed gem binaries to be run on the system

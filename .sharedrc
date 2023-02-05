@@ -1,0 +1,4 @@
+# This will be a shared location aliases that are shared
+# between .zshrc and .bashrc
+
+# see Stack Overflow "include-additional-files-in-bashrc"
