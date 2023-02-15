@@ -267,3 +267,10 @@ alias git-clean-br="git branch --merged | egrep -v \"(^\*|master|dev)\" | xargs 
 
 # have ruby 2.6.5 be the default without stressing about versions
 chruby 2.6.5
+
+
+# zsh auto-complete engine for command line arguments
+autoload -Uz compinit
+compinit
+
+source /Users/markoates/Repos/.dotfiles/compgens.zsh
