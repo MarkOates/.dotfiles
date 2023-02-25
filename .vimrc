@@ -267,10 +267,11 @@ function SetupDefault()
 
 
 
+  " Detect OS, see this stack overflow:
+  " https://stackoverflow.com/questions/2842078/how-do-i-detect-os-x-in-my-vimrc-file-so-certain-configurations-will-only-appl
   if has("unix")
     let s:uname = system("uname")
     if s:uname == "Darwin\n"
-
 
       " Have the vim cursor change when in edit mode/insert mode
       " NOTE: this is only effective for iTerm2 on OSX
