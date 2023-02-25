@@ -45,3 +45,6 @@ alias rr='rerun --quiet -c -p "**/*.{rb,js,tsx,coffee,css,scss,sass,erb,html,ham
 
 export TERM=xterm-256color
 export TERMINFO=/mingw64/share/terminfo
+
+
+cd ~/Repos
