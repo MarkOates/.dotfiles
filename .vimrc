@@ -1,29 +1,75 @@
 
 
-" Ensure searched text is hilighted
-set hlsearch
 
-" Remap the ';' character so that "Shift+;" is not needed to enter commands
-nnoremap ; :
-vnoremap ; :
+function SetupStatusbar()
+  " statusline
+  hi User1 ctermbg=4 ctermfg=7
+  hi User2 ctermbg=1 ctermfg=7
+  hi User3 ctermbg=3 ctermfg=1
+  set laststatus=2
+  set statusline=%1*\ %{expand('%:p:h:t')}/%t\ %*
+  set statusline+=%2*%m%*
+  "" set statusline+=\ [%f]
+  "" set statusline+=\ [%{getcwd()}]
+  set statusline+=%3*\ %*
+  "" set statusline+=%3*\ %{fugitive#statusline()}\ %*
+  set statusline+=%=%-14.(%l,%c%V%)\ %p%%
+endfunction
 
-
-" Setup Vundle and run plugins
-set rtp+=~/.vim/bundle/Vundle.vim
-call vundle#begin()
-
-Plugin 'scrooloose/nerdtree'
-Plugin 'EvanDotPro/nerdtree-chmod' " adds a chmod option in NERDTree 'm' menu
-
-call vundle#end()
-
-
-" Workaround to prevent NERDTree from showing ^G characters in front of nodes in the tree
-" see: https://github.com/preservim/nerdtree/issues/928
-let g:NERDTreeNodeDelimiter = "\u00a0"
 
 
 function SetupDefault()
+
+  " Ensure searched text is hilighted
+  set hlsearch
+
+  " Remap the ';' character so that "Shift+;" is not needed to enter commands
+  nnoremap ; :
+  vnoremap ; :
+
+
+  " Setup Vundle and run plugins
+  set rtp+=~/.vim/bundle/Vundle.vim
+  call vundle#begin()
+
+  Plugin 'scrooloose/nerdtree'
+  Plugin 'EvanDotPro/nerdtree-chmod' " adds a chmod option in NERDTree 'm' menu
+
+  call vundle#end()
+
+
+  " Workaround to prevent NERDTree from showing ^G characters in front of nodes in the tree
+  " see: https://github.com/preservim/nerdtree/issues/928
+  let g:NERDTreeNodeDelimiter = "\u00a0"
+
+
+
+
+  nnoremap <silent> <leader>p :Files<cr>
+
+
+
+  let g:rg_command = 'rg --column --line-number --no-heading --fixed-strings --ignore-case --hidden --follow --glob "!{.git/*,node_modules/*}" --color "always" '
+  command! -bang -nargs=* Find call fzf#vim#grep(g:rg_command . shellescape(<q-args>), 1, <bang>0 ? fzf#vim#with_preview('up:60%') : fzf#vim#with_preview('right:50%'), <bang>0)
+
+  " things
+
+  nnoremap <leader>w :Find <C-R><C-W><cr>
+  nnoremap <leader>w :Find <C-R><C-W><cr>
+
+
+
+  " Testing
+  let test#strategy = "basic"
+  nmap <silent> tn :TestNearest<cr>
+  nmap <silent> tf :TestFile<cr>
+  nmap <silent> tl :TestLast<cr>
+
+
+
+
+
+
   " Install vim from brew
   " "brew install vim --with-override-system-vi"
   " Mac's default vim does not come compiled with "+clipboard" feature, so the
@@ -104,6 +150,7 @@ function SetupDefault()
   " autocmd VimEnter * wincmd p " after opening nerdtree, will move the cursor back to the window
 
 
+
   " Basics
   syntax enable
   set showcmd
@@ -176,23 +223,17 @@ function SetupDefault()
   " highlight OverLength ctermbg=red ctermfg=white guibg=#592929
   " match OverLength /\%121v.\+/
 
-  " statusline
-  hi User1 ctermbg=4 ctermfg=7
-  hi User2 ctermbg=1 ctermfg=7
-  hi User3 ctermbg=3 ctermfg=1
-  set laststatus=2
-  set statusline=%1*\ %{expand('%:p:h:t')}/%t\ %*
-  set statusline+=%2*%m%*
-  "" set statusline+=\ [%f]
-  "" set statusline+=\ [%{getcwd()}]
-  set statusline+=%3*\ %*
-  "" set statusline+=%3*\ %{fugitive#statusline()}\ %*
-  set statusline+=%=%-14.(%l,%c%V%)\ %p%%
+
+
+  " call SetupStatusbar()
 
 
 
   set wildmenu
   set wildmode=list:longest,full
+
+
+
 
 
   " Rainbow parens
@@ -224,16 +265,30 @@ function SetupDefault()
   map <unique> <Tab> i
   imap <unique> <Tab> <Esc>
 
+
+
+  if has("unix")
+    let s:uname = system("uname")
+    if s:uname == "Darwin\n"
+
+
+      " Have the vim cursor change when in edit mode/insert mode
+      " NOTE: this is only effective for iTerm2 on OSX
+      " e.g.: http://vim.wikia.com/wiki/Change_cursor_shape_in_different_modes
+      " let &t_SI = "\<Esc>]50;CursorShape=1\x7"
+      " let &t_SR = "\<Esc>]50;CursorShape=2\x7"
+      " let &t_EI = "\<Esc>]50;CursorShape=0\x7"
+
+
+      " Do Mac stuff here
+    endif
+  endif
+
+
   " disable auto-formatting of comments
   autocmd BufNewFile,BufRead * setlocal formatoptions-=r " prevents auto-adding comments on ENTER
   autocmd BufNewFile,BufRead * setlocal formatoptions-=o " prevents auto-adding comments when adding new lines with o or O
 
-  " Have the vim cursor change when in edit mode/insert mode
-  " NOTE: this is only effective for iTerm2 on OSX
-  " e.g.: http://vim.wikia.com/wiki/Change_cursor_shape_in_different_modes
-  let &t_SI = "\<Esc>]50;CursorShape=1\x7"
-  let &t_SR = "\<Esc>]50;CursorShape=2\x7"
-  let &t_EI = "\<Esc>]50;CursorShape=0\x7"
 
 
   " always expand the number of spaces to 3 for c/cpp
@@ -295,26 +350,6 @@ function SetupDefault()
   " c for Command line editing, for 'incsearch'
   let g:indentLine_concealcursor = ""
 endfunction
-
-nnoremap <silent> <leader>p :Files<cr>
-
-
-
-let g:rg_command = 'rg --column --line-number --no-heading --fixed-strings --ignore-case --hidden --follow --glob "!{.git/*,node_modules/*}" --color "always" '
-command! -bang -nargs=* Find call fzf#vim#grep(g:rg_command . shellescape(<q-args>), 1, <bang>0 ? fzf#vim#with_preview('up:60%') : fzf#vim#with_preview('right:50%'), <bang>0)
-
-" things
-
-nnoremap <leader>w :Find <C-R><C-W><cr>
-nnoremap <leader>w :Find <C-R><C-W><cr>
-
-
-
-" Testing
-let test#strategy = "basic"
-nmap <silent> tn :TestNearest<cr>
-nmap <silent> tf :TestFile<cr>
-nmap <silent> tl :TestLast<cr>
 
 
 call SetupDefault()
