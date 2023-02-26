@@ -5,6 +5,17 @@
 
 
 
+CURRENT_BG_COLOR="\033[48;5;019m"
+CURRENT_FG_COLOR="\033[38;5;158m"
+
+
+
+TERMINAL_COLOR=$CURRENT_BG_COLOR$CURRENT_FG_COLOR
+
+
+
+
+
 COLOR_RED="\033[0;31m"
 COLOR_YELLOW="\033[0;33m"
 COLOR_GREEN="\033[0;32m"
@@ -46,6 +57,17 @@ function git_branch {
 
 
 
+
+BGCOLOR_OCHRE="\033[48;5;95m"
+
+USER_COLOR=$TERMINAL_COLOR
+FOLDER_COLOR=$TERMINAL_COLOR
+GIT_COLOR=git_color
+COLOR_PROMPT=$TERMINAL_COLOR
+
+
+
+
 #PS1="\[$COLOR_WHITE\]\n[\W]"          # basename of pwd
 #PS1+="\[\$(git_color)\]"        # colors git status
 #PS1+="\$(git_branch)"           # prints current branch
@@ -53,7 +75,7 @@ function git_branch {
 #export PS1
 
 
-PS1="\[$COLOR_OCHRE\]\u > \[$COLOR_YELLOW\]\w > \$(git_color)\$(git_branch) > \[$COLOR_WHITE\]\[$COLOR_BLUE\]$\[$COLOR_RESET\] "
+PS1="\n\[$USER_COLOR\] \u ⏵ \[$FOLDER_COLOR\]\w ⏵ \$(GIT_COLOR)\$(git_branch) ⏵ \[$COLOR_PROMPT\]\[$COLOR_RESET\]$ "
 
 
 #source /usr/share/git/completion/git-prompt.sh
