@@ -1,3 +1,24 @@
+
+
+
+# This is the default PS1 value:
+# export PS1='${debian_chroot:+($debian_chroot)}\[\033[01;32m\]\u@\h\[\033[00m\]:\[\033[01;34m\]\w\[\033[00m\]\$ '
+
+
+
+# This imports a shared .sharedrc, which:
+#  1. modifies the PS1 prompt value
+
+SHAREDRC_LOCATION=$HOME/Repos/.dotfiles/.sharedrc
+if [ -f $SHAREDRC_LOCATION ]
+then
+  source $SHAREDRC_LOCATION
+else
+  print "Error: Could not find the expected sharedrc file at $SHAREDRC_LOCATION"
+fi
+
+
+
 alias vi='vim'
 alias gd='echo " ------------------ USE FANCY STATUS INSTEAD -------------------"; git diff'
 alias gds='echo " ------------------ USE FANCY STATUS INSTEAD -------------------"; git diff --staged'
@@ -45,6 +66,8 @@ alias rr='rerun --quiet -c -p "**/*.{rb,js,tsx,coffee,css,scss,sass,erb,html,ham
 
 export TERM=xterm-256color
 export TERMINFO=/mingw64/share/terminfo
+
+
 
 
 cd ~/Repos
