@@ -6,7 +6,7 @@
 
 
 CURRENT_BG_COLOR="\033[48;5;019m"
-CURRENT_FG_COLOR="\033[38;5;158m"
+CURRENT_FG_COLOR="\033[38;5;068m"
 
 
 
@@ -60,8 +60,12 @@ function git_branch {
 
 BGCOLOR_OCHRE="\033[48;5;95m"
 
+
+TERMINAL_COLOR=$CURRENT_BG_COLOR$CURRENT_FG_COLOR
+
+
 USER_COLOR=$TERMINAL_COLOR
-FOLDER_COLOR=$TERMINAL_COLOR
+FOLDER_COLOR="\033[38;5;220m"
 GIT_COLOR=git_color
 COLOR_PROMPT=$TERMINAL_COLOR
 
@@ -75,8 +79,7 @@ COLOR_PROMPT=$TERMINAL_COLOR
 #export PS1
 
 
-PS1="\n\[$USER_COLOR\]   \u  \[$FOLDER_COLOR\]\w  \$(GIT_COLOR)\$(git_branch)  $\[$COLOR_PROMPT\]\[$COLOR_RESET\] "
-
+PS1="\n\[$USER_COLOR\]████▓▒░  \u   \[$FOLDER_COLOR\]\w   \[$CURRENT_FG_COLOR\]$(git_branch)   $\[$COLOR_PROMPT\]\[$COLOR_RESET\] "
 
 #source /usr/share/git/completion/git-prompt.sh
 
