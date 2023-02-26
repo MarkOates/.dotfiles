@@ -75,7 +75,7 @@ COLOR_PROMPT=$TERMINAL_COLOR
 #export PS1
 
 
-PS1="\n\[$USER_COLOR\] \u ⏵ \[$FOLDER_COLOR\]\w ⏵ \$(GIT_COLOR)\$(git_branch) ⏵ \[$COLOR_PROMPT\]\[$COLOR_RESET\]$ "
+PS1="\n\[$USER_COLOR\]   \u  \[$FOLDER_COLOR\]\w  \$(GIT_COLOR)\$(git_branch)  $\[$COLOR_PROMPT\]\[$COLOR_RESET\] "
 
 
 #source /usr/share/git/completion/git-prompt.sh
