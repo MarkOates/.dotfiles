@@ -250,11 +250,16 @@ PROMPT3='{ … }  '
 [ -f /opt/dev/dev.sh ] && source /opt/dev/dev.sh
 
 
+
 # for chruby
 #source /usr/local/share/chruby/chruby.sh
-source /usr/local/opt/chruby/share/chruby/chruby.sh
+#source /usr/local/opt/chruby/share/chruby/chruby.sh
 
 #source /usr/local/share/chruby/auto.sh
+
+# have ruby 2.6.5 be the default without stressing about versions
+# chruby 2.6.5
+
 
 export FZF_DEFAULT_COMMAND='rg --files --hidden --glob="!{.git/*}"'
 
@@ -265,8 +270,6 @@ alias git-clean-br="git branch --merged | egrep -v \"(^\*|master|dev)\" | xargs 
 #if [ -e /Users/markoates/.nix-profile/etc/profile.d/nix.sh ]; then . /Users/markoates/.nix-profile/etc/profile.d/nix.sh; fi # added by Nix installer
 
 
-# have ruby 2.6.5 be the default without stressing about versions
-chruby 2.6.5
 
 
 # zsh auto-complete engine for command line arguments
