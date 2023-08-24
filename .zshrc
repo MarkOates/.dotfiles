@@ -86,7 +86,8 @@ alias create_release='/Users/markoates/Repos/blast/bin/programs/create_source_re
 alias daemus='/Users/markoates/Repos/hexagon/bin/programs/daemus'
 alias d='daemus'
 alias sc='symlink_component'
-alias s='(cd /Users/markoates/Business/CLUBCATT/web_files && python3 /Users/markoates/Repos/ClubCatt/host/server.py)'
+alias server='(cd /Users/markoates/Business/CLUBCATT/web_files && python3 /Users/markoates/Repos/ClubCatt/host/server.py)'
+alias s='server'
 
 
 
