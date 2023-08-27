@@ -119,6 +119,11 @@ function vim_with_component_setup(){
 
 
 
+# Load some env vars
+
+source ~/.config/.app-env
+
+
 # https://stackoverflow.com/questions/40429865/how-to-exit-bash-function-if-error
 
 function _move_to_projects_dir_and_generate(){
