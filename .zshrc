@@ -127,6 +127,7 @@ source ~/.config/.app-env
 # https://stackoverflow.com/questions/40429865/how-to-exit-bash-function-if-error
 
 function _move_to_projects_dir_and_generate(){
+  # For now, need to go to the projects directory because the Makefile (and probably other files) are symlinked relative to Repos/
   cd $PROJECTS_DIRECTORY && \
   ~/Repos/blast/bin/programs/generator $1 && \
   cd $1 && \
@@ -138,8 +139,6 @@ function _move_to_projects_dir_and_generate(){
 function _move_to_projects_dir(){
   cd "$PROJECTS_DIRECTORY/$1"
 }
-
-
 
 
 # aliases to projekts
@@ -177,6 +176,19 @@ alias refresh="source ~/.zshrc"
 alias kill_daemus="kill $(ps aux | grep "/Users/markoates/Repos/hexagon/bin/programs/daemus" | awk '{print $2}')"
 alias count_daemus='ps aux | grep "/Users/markoates/Repos/hexagon/bin/programs/daemus" | grep "" -c'
 
+
+
+# Almost auto-completed: https://chat.openai.com/c/93fc4d7c-11f5-47ce-8eb1-66bd9c7ca517
+
+#_my_custom_command_completion() {
+    #local repo_directory="/Users/markoates/Repos/"
+
+    ## Specify the directory for autocompletion
+    ##_arguments '*: :_files - -/'"${repo_directory}"'*(-/)'
+    #_arguments '*: :_files -' - /"${repo_directory}"'*(-/)'
+#}
+
+#compdef _my_custom_command_completion project
 
 
 
