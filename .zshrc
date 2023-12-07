@@ -178,17 +178,22 @@ alias count_daemus='ps aux | grep "/Users/markoates/Repos/hexagon/bin/programs/d
 
 
 
-# Almost auto-completed: https://chat.openai.com/c/93fc4d7c-11f5-47ce-8eb1-66bd9c7ca517
 
-#_my_custom_command_completion() {
+#autoload -Uz compinit
+#compinit
+
+# Almost auto-completed: https://chat.openai.com/c/93fc4d7c-11f5-47ce-8eb1-66bd9c7ca517
+#
+# _my_custom_command_completion() {
+    #echo "a"
     #local repo_directory="/Users/markoates/Repos/"
 
     ## Specify the directory for autocompletion
     ##_arguments '*: :_files - -/'"${repo_directory}"'*(-/)'
     #_arguments '*: :_files -' - /"${repo_directory}"'*(-/)'
-#}
+# }
 
-#compdef _my_custom_command_completion project
+# compdef _my_custom_command_completion project
 
 
 
@@ -292,7 +297,7 @@ alias git-clean-br="git branch --merged | egrep -v \"(^\*|master|dev)\" | xargs 
 
 
 # zsh auto-complete engine for command line arguments
-autoload -Uz compinit
-compinit
+#autoload -Uz compinit
+#compinit
 
-source /Users/markoates/Repos/.dotfiles/compgens.zsh
+# source /Users/markoates/Repos/.dotfiles/compgens.zsh
