@@ -108,3 +108,14 @@ pacman -S zip --noconfirm
 pacman -S mingw-w64-x86_64-binutils
 
 
+
+# Build stuff
+
+cd ~/Repos/blast
+make programs -j5 && make
+
+cd ~/Repos/allegro_flare
+../blast/bin/programs/symlink_fixer.exe
+make
+
+
