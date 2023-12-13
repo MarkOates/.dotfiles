@@ -107,6 +107,7 @@ mkdir ~/.vimbackup/
 
 pacman -S mingw-w64-x86_64-imagemagick --noconfirm
 pacman -S zip --noconfirm
+pacman -S unzip --noconfirm
 pacman -S mingw-w64-x86_64-binutils
 
 
