@@ -74,9 +74,11 @@ git clone https://github.com/liballeg/allegro5.git
 # symlink the rc files
 
 cd ~
+ln -sf ~/Repos/.dotfiles/.vimrc .vimrc
+ln -sf ~/Repos/.dotfiles/.zshrc .zshrc
+source .zshrc
 ln -sf ~/Repos/.dotfiles/.bashrc .bashrc
 source .bashrc
-ln -sf ~/Repos/.dotfiles/.vimrc .vimrc
 
 
 # Install allegro5
@@ -95,10 +97,14 @@ make install
 cd ~/Repos
 git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim
 vim +PluginInstall +qall
+mkdir ~/.vimbackup/
 
 
+
+# Setup necessary utilities for making win64 project releases
 
 pacman -S mingw-w64-x86_64-imagemagick --noconfirm
 pacman -S zip --noconfirm
+pacman -S mingw-w64-x86_64-binutils
 
 
