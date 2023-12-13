@@ -10,7 +10,7 @@ Visit your GitHub account settings, go to "SSH and GPG keys," and click on "New 
 echo "Visit your GitHub account settings, go to \"SSH and GPG keys,\" and click on \"New SSH key.\" Paste the copied key into the \"Key\" field."
 read -n 1 -s -r -p "Perss any key to continue..."
 ssh-keyscan github.com >> ~/.ssh/known_hosts
-ssh -T git@github.com || exit 1
+ssh -T git@github.com
 
 
 git config --global user.email "markoates0@gmail.com"
