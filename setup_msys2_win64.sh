@@ -1,3 +1,5 @@
+# Step 1 is to download the MSYS2 installer from https://www.msys2.org/
+# Step 2 run this script
 
 # Setup Github SSH Key
 
