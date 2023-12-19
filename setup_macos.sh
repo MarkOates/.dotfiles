@@ -82,8 +82,12 @@ make
 # Setup some useful stuff
 brew install imagemagick
 
+# TODO: Consider adding this to system_test
+brew install ffmpeg
 
 
 # Run system test
 cd ~/Repos/blast
 bin/programs/system_test
+
+
