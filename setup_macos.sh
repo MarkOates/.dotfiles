@@ -79,4 +79,11 @@ cmake ..
 make
 
 
+# Setup some useful stuff
+brew install imagemagick
 
+
+
+# Run system test
+cd ~/Repos/blast
+bin/programs/system_test
