@@ -86,6 +86,13 @@ brew install imagemagick
 brew install ffmpeg
 
 
+# Setup gcloud
+brew install --cask google-cloud-sdk
+
+## Follow the on-screen instructions if any, log in, use the "game development workflow"
+gcloud init
+
+
 # Run system test
 cd ~/Repos/blast
 bin/programs/system_test
