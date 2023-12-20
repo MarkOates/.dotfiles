@@ -82,6 +82,11 @@ make
 # Setup some useful stuff
 brew install imagemagick
 
+
+# Add dylibbundler (used for building binaries on mac)
+brew install dylibbundler
+
+
 # TODO: Consider adding this to system_test
 brew install ffmpeg
 
