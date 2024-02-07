@@ -125,6 +125,7 @@ brew install imagemagick
 brew install dylibbundler
 
 # TODO: Consider adding this ffmpeg to system_test
+# ffmpeg is typically used for converting audio formats
 brew install ffmpeg
 
 # Setup gcloud
@@ -175,3 +176,11 @@ system_test
 #make
 
 
+# Install other software:
+# Monosnap
+# Tiled
+# Photoshop / Adobe Suite
+# Aseprite
+# Vienna Ensemble Pro
+# AssetForge
+# Blockbench
