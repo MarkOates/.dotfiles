@@ -10,6 +10,8 @@
 # - In "Keyboard Settings", increase keyboard repeat rate to max and delay rate to min
 # - In TextEdit > Settings, Select "plain text" at the top, then unselect *all* the checkboxes down below uner Options
 # - In iTerm Preferences > Profiles icon > Terminal tab, under "Scrollback bufffer" check "Unlimited scrollback"
+# - In iTerm Preferences > Profiles icon > Window tab, under "Settings for New Windows" set columns and rows to 170x50.
+# - In iTerm Preferences > Profiles icon > Colors tab, Pick a color preset from the bottom right.
 #
 # Having done this you can now run this setup script
 
@@ -37,6 +39,7 @@ ssh -T git@github.com
 mkdir -p ~/Releases
 mkdir -p ~/Repos
 mkdir -p ~/Builds
+mkdir -p ~/Samples
 
 
 # symlink dotfiles
@@ -182,14 +185,19 @@ system_test
 
 
 # Install other software:
-# Monosnap
-# Tiled
-# Photoshop / Adobe Suite
-# Aseprite
-# Vienna Ensemble Pro
-# AssetForge
-# Blockbench
+# Monosnap (through App Store)
+# Tiled (get from itch.io)
+# Photoshop / Adobe Suite (sign in to adobe.com, install Creative Cloud)
+# Aseprite (get from humble bundle purchase)
+# Vienna Assistant (download from https://www.vsl.co.at/en/MyVSL/MyDownloads)
+#  iLok (https://ilok.com/#!license-manager)
+# AssetForge (from itch.io)
+# Blockbench (from blockbench.net)
+# Blender
+# FLStudio
 
 # Additional setting changes
 # In Chrome > Settings > Downloads menu item, change default download location to Desktop
-# Add additional folders to finder shortcuts, (Repos, Releases)
+# Add additional folders to Finder shortcuts pane (e.g. Repos, Releases)
+# Finder Settings > General, under Show theese items on the desktop, uncheck all items
+# Right-click desktop, select sort by "Date Added"
