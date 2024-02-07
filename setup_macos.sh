@@ -159,11 +159,12 @@ cd ~/Repos/blast
 make programs -j6 && make
 
 
-# Run system test
-cd ~/Repos/blast
-./bin/programs/system_test
+# Run status (~/Repos/blast/bin/programs/status)
 status
 
+
+# Run system_test (~/Repos/blast/bin/programs/system_test)
+system_test
 
 # Build other projects
 
