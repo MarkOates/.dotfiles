@@ -1,9 +1,15 @@
-# TODO: Create the github ssh key
-# This script assumes you have cloned .dotfiles on your system:
+# 1) Download Chrome
+# 2) Download iTerm2
+# 3) In iTerm clone .dotfiles:
 #
 # mkdir -p ~/Repos
 # cd ~/Repos
 # git clone git@github.com:MarkOates/.dotfiles.git
+#
+# Additional things:
+# - In "Keyboard Settings", increase keyboard repeat rate to max and delay rate to min
+# - In TextEdit > Settings, Select "plain text" at the top, then unselect *all* the checkboxes down below uner Options
+# - In iTerm Preferences > Profiles icon > Terminal tab, under "Scrollback bufffer" check "Unlimited scrollback"
 #
 # Having done this you can now run this setup script
 
@@ -166,6 +172,5 @@ status
 
 #cd ~/Repos/allegro_flare
 #make
-
 
 
