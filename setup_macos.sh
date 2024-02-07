@@ -134,6 +134,11 @@ brew install --cask google-cloud-sdk
 ## Follow the on-screen instructions if any, log in, use the "game development workflow"
 gcloud init
 
+# Install ngrok
+brew install ngrok/ngrok/ngrok
+echo "You will now need to login to ngrok.com, visit https://dashboard.ngrok.com/get-started/setup/macos and copy the instruction line along with 'ngrok config add-authtoken 6iD2R03GQ56j97I_thisIsAFakeToken_5jKh7HxIZuAV99Q3HZ87RX4'"
+read -n 1 -s -r -p "Once you have run this line (in another terminal), Press any key to continue..."
+
 
 ## Now clone the project repos
 
@@ -184,3 +189,7 @@ system_test
 # Vienna Ensemble Pro
 # AssetForge
 # Blockbench
+
+# Additional setting changes
+# In Chrome > Settings > Downloads menu item, change default download location to Desktop
+# Add additional folders to finder shortcuts, (Repos, Releases)
