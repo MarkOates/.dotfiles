@@ -13,6 +13,9 @@
 # - In iTerm Preferences > Profiles icon > Window tab, under "Settings for New Windows" set columns and rows to 170x50.
 # - In iTerm Preferences > Profiles icon > Colors tab, Pick a color preset from the bottom right.
 #
+# NOTE: Consider automating the setting of some Application's options:
+# https://www.shell-tips.com/mac/defaults/#gsc.tab=0
+#
 # Having done this you can now run this setup script
 
 
@@ -201,3 +204,4 @@ system_test
 # Add additional folders to Finder shortcuts pane (e.g. Repos, Releases)
 # Finder Settings > General, under Show theese items on the desktop, uncheck all items
 # Right-click desktop, select sort by "Date Added"
+
