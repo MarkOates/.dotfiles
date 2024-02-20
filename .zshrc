@@ -88,6 +88,7 @@ alias d='daemus'
 alias sc='symlink_component'
 alias server='(cd /Users/markoates/Business/CLUBCATT/web_files && python3 /Users/markoates/Repos/ClubCatt/host/server.py)'
 alias s='server'
+alias fresh='/Users/markoates/Repos/blast/scripts/make_fresh.sh'
 
 
 
