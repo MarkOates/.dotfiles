@@ -69,4 +69,8 @@ export TERMINFO=/mingw64/share/terminfo
 
 
 
+alias gcloud='echo " ------------------ NOTICE: this usage of gcloud is an alias in .bashrc -------------------"; "/C/Users/Mark/AppData/Local/Google/Cloud SDK/google-cloud-sdk/bin/gcloud"'
+
+
+
 cd ~/Repos
