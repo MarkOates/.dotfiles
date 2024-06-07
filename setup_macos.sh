@@ -37,6 +37,10 @@ git config --global user.name "Mark Oates"
 ssh -T git@github.com
 
 
+# Setup git to always use master as default branch
+git config --global init.defaultBranch master
+
+
 # Make some dirs
 
 mkdir -p ~/Releases

@@ -19,6 +19,10 @@ git config --global user.email "markoates0@gmail.com"
 git config --global user.name "Mark Oates"
 
 
+# Setup git to always use master as default branch
+git config --global init.defaultBranch master
+
+
 # Install vim first, in case something gets weird (vundle and plugins will be installed later)
 pacman -Sy vim --noconfirm
 
