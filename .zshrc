@@ -95,7 +95,7 @@ alias fresh='/Users/markoates/Repos/blast/scripts/make_fresh.sh'
 alias l='~/Repos/blast/bin/programs/fancy_list /Users/markoates/Repos/me/fancy_lists/fancy_immediate_list.txt green'
 
 alias import_asset='~/Repos/allegro_flare/bin/programs/asset_importer'
-
+alias list_asset='~/Repos/allegro_flare/scripts/list_asset.sh'
 
 
 
