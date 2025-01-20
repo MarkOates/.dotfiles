@@ -96,6 +96,7 @@ alias l='~/Repos/blast/bin/programs/fancy_list /Users/markoates/Repos/me/fancy_l
 
 alias import_asset='~/Repos/allegro_flare/bin/programs/asset_importer'
 alias list_asset='~/Repos/allegro_flare/scripts/list_asset.sh'
+alias sync_assets='~/Repos/AssetStudio/scripts/remote_asset_sync.sh'
 
 
 
