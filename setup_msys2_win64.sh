@@ -27,6 +27,10 @@ git config --global init.defaultBranch master
 pacman -Sy vim --noconfirm
 
 
+# Set the default editor to be vim instead of nano (during "git commit --amend" for example)
+git config --global core.editor "vim"
+
+
 
 pacman -S mingw-w64-x86_64-gcc --noconfirm
 pacman -S mingw-w64-x86_64-gdb --noconfirm
@@ -60,6 +64,7 @@ mkdir -p Builds
 
 pacman -S ncurses-devel --noconfirm
 pacman -S mingw-w64-x86_64-yaml-cpp --noconfirm
+pacman -S mingw-w64-x86_64-bullet --noconfirm
 pacman -S mingw-w64-x86_64-gtest  --noconfirm
 
 
