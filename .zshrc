@@ -42,6 +42,16 @@ alias lily=lilypond
 # alias ngrok='~/Applications/ngrok'
 
 
+
+downscale_video() 
+{
+   input_file="$1"
+   output_file="${input_file%.*}-small.${input_file##*.}"
+   ffmpeg -i "$input_file" -vf "scale=-2:800" -c:v libx264 -crf 28 -preset slow -c:a aac -b:a 128k -movflags +faststart -fs 8M "$output_file"
+}
+
+
+
 function git_fixup(){
   git commit -m "f $1"
   echo '(dummy content)' > 'foobar.txt'
