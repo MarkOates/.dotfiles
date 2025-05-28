@@ -43,11 +43,35 @@ alias lily=lilypond
 
 
 
-downscale_video() 
+downscale_video()
 {
+   if [[ $# -lt 1 || $# -gt 3 ]]; then
+      echo "Usage: downscale_video <input_file> [output_file] [height]"
+      echo " - <input_file>: Path to the input video file"
+      echo " - [output_file]: Optional. Defaults to <input_file>-small.<ext>"
+      echo " - [height]: Optional. Defaults to 800"
+      return 1
+   fi
+
    input_file="$1"
-   output_file="${input_file%.*}-small.${input_file##*.}"
-   ffmpeg -i "$input_file" -vf "scale=-2:800" -c:v libx264 -crf 28 -preset slow -c:a aac -b:a 128k -movflags +faststart -fs 8M "$output_file"
+
+   if [[ ! -f "$input_file" ]]; then
+      echo "Error: Input file '$input_file' does not exist."
+      return 1
+   fi
+
+   output_file="${2:-${input_file%.*}-small.${input_file##*.}}"
+   height="${3:-800}"
+
+   echo "Downscaling '$input_file' to '$output_file' with height $height..."
+
+   ffmpeg -i "$input_file" \
+      -vf "scale=-2:${height}" \
+      -c:v libx264 -crf 28 -preset slow \
+      -c:a aac -b:a 128k \
+      -movflags +faststart \
+      -fs 8M \
+      "$output_file"
 }
 
 
@@ -99,6 +123,7 @@ alias sc='symlink_component'
 alias server='(cd /Users/markoates/Business/CLUBCATT/web_files && python3 /Users/markoates/Repos/ClubCatt/host/server.py)'
 alias s='server'
 alias fresh='/Users/markoates/Repos/blast/scripts/make_fresh.sh'
+alias dv="downscale_video"
 
 
 
