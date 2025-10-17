@@ -182,6 +182,8 @@ function _move_to_projects_dir(){
 
 
 # aliases to projekts
+alias symlinker='~/Repos/blast/bin/programs/symlinker'
+alias sl='~/Repos/blast/bin/programs/symlinker'
 alias fb='~/Repos/blast/bin/programs/fancy_branch'
 alias fl='~/Repos/blast/bin/programs/fancy_log'
 alias fs='~/Repos/blast/bin/programs/fancy_stager'
