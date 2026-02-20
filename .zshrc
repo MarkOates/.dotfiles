@@ -125,6 +125,7 @@ alias s='server'
 alias fresh='/Users/markoates/Repos/blast/scripts/make_fresh.sh'
 alias dv="downscale_video"
 alias ccs="(cd /Users/markoates/Business/CLUBCATT/web_files && python3 /Users/markoates/Repos/ClubCatt/host/server.py)"
+alias blender='/Applications/Blender.app/Contents/MacOS/Blender'
 
 
 alias l='~/Repos/blast/bin/programs/fancy_list /Users/markoates/Repos/me/fancy_lists/fancy_immediate_list.txt green'
